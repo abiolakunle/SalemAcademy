@@ -1,24 +1,23 @@
-import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import AppHamburger from './components/atoms/hamburger/AppHamburger';
+import AppNavMenu from './components/molecules/nav-menu/AppNavMenu';
+import { useState } from 'react';
+import AppHeader from './components/molecules/app-header/AppHeader';
 
-function App() {
+const App = () => {
+
+  const [menuOpened, setMenuOpened] = useState(false)
+  const menuButtonClicked = (state: boolean) => {
+    setMenuOpened(state)
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AppHamburger handleClick={(state: boolean) => menuButtonClicked(state)} />
+      <AppNavMenu open={menuOpened} setMenuOpened={setMenuOpened} />
+      <AppHeader backgroundImg={"./assets/images/home-header-banner.webp"} />
+
     </div>
   );
 }

@@ -1,0 +1,7 @@
+
+.app_nav_item{
+    padding-left: 50px;
+}
+.app_nav_item:hover{
+    background-color: var(--primary-dark)
+}
