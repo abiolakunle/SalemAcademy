@@ -8,6 +8,8 @@ const AppHeader = ({ backgroundImg }: any) => {
                     <div className="heading-texts">
                         <h1>Welcome</h1>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe repellendus, doloremque non ullam quasi nisi facere. Quos consequatur debitis rem aut recusandae tempore, quia sapiente, eum quasi delectus repellendus corporis.</p>
+
+
                     </div>
                 </div>
             </header>

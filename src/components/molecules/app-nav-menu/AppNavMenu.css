@@ -3,7 +3,6 @@
 
   .sidenav {
     height: 100%;
-    width: 0;
     position: fixed;
     z-index: 35;
     top: 0;
@@ -11,7 +10,7 @@
     background-color: var(--primary);
     overflow-x: hidden;
     transition: 1s;
-    clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+    /* clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%); */
     display: flex;
     justify-content: center;
   }

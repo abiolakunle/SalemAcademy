@@ -1,7 +1,11 @@
 
 .app_nav_item{
     padding-left: 50px;
+    /* display: flex;
+    justify-content: space-between; */
+    color: var(--white);
 }
 .app_nav_item:hover{
     background-color: var(--primary-dark)
+
 }

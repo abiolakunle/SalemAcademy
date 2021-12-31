@@ -1,0 +1,16 @@
+.app-article-image-grid{
+    display: flex;
+    
+}
+.col-image{
+    min-width: 60vw;
+    height: 40em;
+}
+
+.col-text{
+min-width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}

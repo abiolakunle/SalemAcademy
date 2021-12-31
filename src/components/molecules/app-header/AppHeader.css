@@ -10,7 +10,7 @@
 .wgs-header-strip__banner-overlay {
     position: absolute;
     width: 55%;
-    height: calc(100% + 20px);
+    height: calc(100% + 10px);
     top: -10px;
     left: -10px;
    
@@ -32,3 +32,4 @@
     text-align: left;
     max-width: 350px;
 }
+

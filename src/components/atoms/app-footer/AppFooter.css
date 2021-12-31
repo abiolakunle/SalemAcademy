@@ -1,0 +1,16 @@
+.app-footer{
+    background-color: var(--primary);
+    width: 100%;
+    position: relative;
+    height: auto;
+    padding: 45px 0 45px 0;
+}
+
+.app-footer a{
+    color: var(--light-grey1);
+    display: block;
+}
+
+.app-footer h3{
+    color: var(--dark-grey);
+}
