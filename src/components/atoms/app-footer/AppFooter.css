@@ -14,3 +14,12 @@
 .app-footer h3{
     color: var(--dark-grey);
 }
+
+.app-footer .social{
+    display: inline;
+    padding: 10px;
+}
+
+.app-footer .row{
+    width: 100%;
+}

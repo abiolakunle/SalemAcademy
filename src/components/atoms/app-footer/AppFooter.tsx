@@ -24,6 +24,13 @@ const AppFooter = () => {
                     <Link to="#">Lorem ipsum dolor sit amet.</Link>
                     <Link to="#">Lorem ipsum dolor sit amet.</Link>
                 </Col>
+
+                <Col sm={12}>
+                    <h3>Social</h3>
+                    <Link to="#" className='social'><i className="fab fa-twitter"></i></Link>
+                    <Link to="#" className='social'><i className="fab fa-facebook"></i></Link>
+                    <Link to="#" className='social'><i className="fab fa-instagram"></i></Link>
+                </Col>
             </Row>
         </Container>
     )

@@ -27,7 +27,8 @@ const AppFixedParallaxSection = ({ backgroundColor, contentPosition, children }:
                             <span className="m_scroll_arrows doi"></span>
                             <span className="m_scroll_arrows trei"></span>
                         </div>
-                    </div> </div>
+                    </div>
+                </div>
 
 
             </div>

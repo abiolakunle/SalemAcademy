@@ -12,6 +12,8 @@ import AppHeroBanner from './components/atoms/app-hero-banner/AppHeroBanner';
 import { Col, Container, Row } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AppFooter from './components/atoms/app-footer/AppFooter';
+import AppSubFooter from './components/atoms/app-sub-footer/AppSubFooter';
+import AppMenu from './components/molecules/app-menu/AppMenu';
 
 const App = () => {
 
@@ -22,6 +24,7 @@ const App = () => {
 
   return (
     <div className="App">
+      <AppMenu />
       <AppHamburger handleClick={(state: boolean) => menuButtonClicked(state)} />
       <AppNavMenu open={menuOpened} setMenuOpened={setMenuOpened} openPosition={0} closedPosition={-450}>
         <AppNavItem linkText="Homes" />
@@ -71,6 +74,7 @@ const App = () => {
         </Row>
       </Container>
       <AppFooter />
+      <AppSubFooter />
 
 
 

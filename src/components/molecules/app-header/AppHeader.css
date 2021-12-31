@@ -10,10 +10,9 @@
 .wgs-header-strip__banner-overlay {
     position: absolute;
     width: 55%;
-    height: calc(100% + 10px);
-    top: -10px;
+    height: calc(100%);
+    
     left: -10px;
-   
     transform: skewX(-13deg);
     transform-origin: left top;
     display: table;
@@ -22,7 +21,9 @@
 .heading-wrapper{
   position: absolute;
   top: 25%;
+  left: 25%;
   margin: 0px auto;
+  min-width: 40%;
 }
 
 .heading-texts{
@@ -33,3 +34,23 @@
     max-width: 350px;
 }
 
+
+.heading-wrapper .mouse_scroll{
+    position: absolute;
+    left: 0px;
+    margin-top: 20px;
+
+}
+
+
+.app-logo{
+    position: absolute;
+    top: 0px;
+    right: 32px;
+    width: 180px;
+    height: 200px;
+    background-color: var(--black-transparent);
+    padding: 10px;
+    color: var(--white);
+    font-weight: bold;
+}
