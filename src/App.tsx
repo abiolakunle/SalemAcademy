@@ -24,7 +24,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <AppMenu />
+      {/* <AppMenu /> */}
       <AppHamburger handleClick={(state: boolean) => menuButtonClicked(state)} />
       <AppNavMenu open={menuOpened} setMenuOpened={setMenuOpened} openPosition={0} closedPosition={-450}>
         <AppNavItem linkText="Homes" />
