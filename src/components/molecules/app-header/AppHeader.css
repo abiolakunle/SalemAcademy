@@ -2,6 +2,12 @@
     height: 100vh;
 }
 
+
+
+p{
+        font-size: 1.2rem;
+}
+
 .wgs-header-strip__banner-overlay-BLACK {
     background-color: rgb(0, 0, 0, 0.4);
     z-index: 2;
@@ -10,7 +16,7 @@
 .wgs-header-strip__banner-overlay {
     position: absolute;
     width: 55%;
-    height: calc(100%);
+    height: calc(100vh);
     
     left: -10px;
     transform: skewX(-13deg);

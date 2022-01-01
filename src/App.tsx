@@ -1,6 +1,6 @@
 
 import './App.css';
-import AppHamburger from './components/atoms/hamburger/AppHamburger';
+
 import AppNavMenu from './components/molecules/app-nav-menu/AppNavMenu';
 import { useState } from 'react';
 import AppHeader from './components/molecules/app-header/AppHeader';
@@ -24,14 +24,14 @@ const App = () => {
 
   return (
     <div className="App">
-      {/* <AppMenu /> */}
-      <AppHamburger handleClick={(state: boolean) => menuButtonClicked(state)} />
-      <AppNavMenu open={menuOpened} setMenuOpened={setMenuOpened} openPosition={0} closedPosition={-450}>
+      <AppMenu />
+
+      {/* <AppNavMenu open={menuOpened} setMenuOpened={setMenuOpened} openPosition={0} closedPosition={-450}>
         <AppNavItem linkText="Homes" />
         <AppNavItem linkText="About Us" />
         <AppNavItem linkText="Admissions" />
         <AppNavItem linkText="Gallery" />
-      </AppNavMenu>
+      </AppNavMenu> */}
       <AppHeader backgroundImg={"./assets/images/home-header-banner.webp"} />
       <AppFixedParallaxSection backgroundColor={"var(--dark-blue-1)"} contentPosition={-1}>
         <h2>Our Ethos</h2>

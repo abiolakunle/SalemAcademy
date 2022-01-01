@@ -1,3 +1,9 @@
 .app-hero-image{
     min-height: 450px;
 }
+
+.app-hero-image.darken-overlay{
+    position: absolute;
+    background-color: #000;
+    opacity: 1;
+}

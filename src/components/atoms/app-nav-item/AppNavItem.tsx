@@ -1,18 +1,25 @@
 
 import { Link } from 'react-router-dom'
-import AppSubMenu from '../../molecules/app-sub-menu/AppSubMenu'
+
 import "./AppNavItem.css"
 
-const AppNavItem = ({ linkText, hasSubMenu }: any) => {
+const AppNavItem = ({ linkText, onClick }: any) => {
     return (
         <>
-            <li className='app_nav_item'>
+            <li className='app_nav_item' onClick={onClick}>
+
                 <Link to="#">{linkText}</Link>
                 {/* <i className="fas fa-solid fa-angle-right fa-2x"></i> */}
+                {!!onClick ?
+                    <div className="round">
+                        <div id="cta">
+                            <span className="arrow primera next "></span>
+                            <span className="arrow segunda next "></span>
+                        </div>
+                    </div>
+                    : ""}
             </li>
-            {/* <AppSubMenu openPosition={450} closedPosition={0} open={true}>
-                <h3>Sub menu</h3>
-            </AppSubMenu> */}
+
         </>
     )
 }

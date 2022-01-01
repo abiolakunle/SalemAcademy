@@ -1,16 +1,17 @@
+import { Col, Row } from "react-bootstrap"
 import "./AppArticleImageGrid.css"
 
 const AppArticleImageGrid = ({ backgroundColor, imageUrl, imageFirst }: any) => {
 
 
     const image = () => {
-        return (<div className="col-image" style={{ background: `url('${imageUrl}') no-repeat center center / cover` }}>
-        </div>)
+        return (<Col md={7} className="col-image" style={{ background: `url('${imageUrl}') no-repeat center center / cover` }}>
+        </Col>)
     }
 
     const text = () => {
         return (
-            <div className="col-text" style={{ backgroundColor }}>
+            <Col md={5} className="col-text" style={{ backgroundColor }}>
 
 
                 <div className="aligner-item">
@@ -26,7 +27,7 @@ const AppArticleImageGrid = ({ backgroundColor, imageUrl, imageFirst }: any) => 
 
 
                 </div>
-            </div>
+            </Col>
         )
 
     }
@@ -34,9 +35,9 @@ const AppArticleImageGrid = ({ backgroundColor, imageUrl, imageFirst }: any) => 
     const items = imageFirst ? [image, text] : [text, image]
 
     return (
-        <div className="app-article-image-grid">
+        <Row className="app-article-image-grid">
             {items.map((Item, index) => <Item key={index} />)}
-        </div>
+        </Row>
     )
 }
 

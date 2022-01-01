@@ -42,6 +42,11 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
+h1{
+    color: #ffffff !important;
+    font-size: 50px !important;
+}
+
 html{
   font-family: 'Noto Sans', sans-serif;
 }
