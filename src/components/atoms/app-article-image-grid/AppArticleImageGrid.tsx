@@ -25,7 +25,6 @@ const AppArticleImageGrid = ({ backgroundColor, imageUrl, imageFirst }: any) => 
                     <a className="layout-item-button" href="https://www.westminster.org.uk/football-unites-the-westminster-community-to-help-londons-refugees/">read more →</a>&nbsp;&nbsp;
                     <a className="layout-item-button" href="/news-archive">All news →</a>
 
-
                 </div>
             </Col>
         )
