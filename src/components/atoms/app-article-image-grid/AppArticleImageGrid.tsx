@@ -20,7 +20,7 @@ const AppArticleImageGrid = ({ backgroundColor, imageUrl, imageFirst }: any) => 
                         17 December 2021				</span>
                     <h2>Latest News</h2>
                     <p>
-                        Football unites the Westminster community to help London’s refugees    </p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic aliquam inventore nisi ipsam illo maxime soluta et enim deleniti, tempore odio quam ex. Magnam at fugit, ex tempora saepe nesciunt.    </p>
 
                     <a className="layout-item-button" href="https://www.westminster.org.uk/football-unites-the-westminster-community-to-help-londons-refugees/">read more →</a>&nbsp;&nbsp;
                     <a className="layout-item-button" href="/news-archive">All news →</a>
