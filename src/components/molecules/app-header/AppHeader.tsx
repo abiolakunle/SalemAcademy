@@ -3,7 +3,7 @@ import "./AppHeader.css"
 const AppHeader = ({ backgroundImg }: any) => {
     return (
         <><div className="wgs-header-strip__banner-overlay  wgs-header-strip__banner-overlay-BLACK"> </div>
-            <header style={{ backgroundRepeat: "no-repeat", backgroundImage: `url(${backgroundImg})` }} id="app-header">
+            <header style={{ backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center", backgroundImage: `url(${backgroundImg})` }} id="app-header">
                 <div className="app-logo">
                     <img width="100%" src="./assets/images/salem-logo.png" alt="salem academy" />
                     <span>Salem Academy</span>
