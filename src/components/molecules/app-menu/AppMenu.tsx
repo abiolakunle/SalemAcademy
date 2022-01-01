@@ -1,13 +1,15 @@
 import { Button, Drawer, Space } from 'antd'
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 import AppHamburger from '../../atoms/app-hamburger/AppHamburger';
-import 'antd/dist/antd.css';
+//import 'antd/dist/antd.css';
 import AppNavItem from '../../atoms/app-nav-item/AppNavItem';
 import "./AppMenu.css"
 
 const AppMenu = () => {
     const initialState = { visible: false, width: 450, childrenDrawer: false }
     const [state, setState] = useState(initialState);
+    const [childDrawerItem, setChildDrawerItem] = useState("");
 
 
 
@@ -26,12 +28,13 @@ const AppMenu = () => {
         });
     };
 
-    const showChildrenDrawer = () => {
+    const showChildrenDrawer = (item: any) => {
         setState({
             ...state,
             childrenDrawer: true,
-            width: state.width * 2
+            width: state.childrenDrawer ? state.width : state.width * 2
         });
+        setChildDrawerItem(item)
     };
 
     const onChildrenDrawerClose = () => {
@@ -51,15 +54,26 @@ const AppMenu = () => {
                 onClose={onClose}
                 visible={state.visible}
                 contentWrapperStyle={{ clipPath: "polygon(0 0, 100% 0, 76% 100%, 0% 100%)" }}
-                bodyStyle={{ left: state.childrenDrawer ? state.width / 2 : 0, position: state.childrenDrawer ? "absolute" : "relative", border: 0, padding: 0, backgroundColor: "var(--primary)" }}
+                bodyStyle={{ left: state.childrenDrawer ? state.width / 2 : 0, position: state.childrenDrawer ? "absolute" : "relative", border: 0, padding: 0, backgroundColor: "var(--primary)", overflow: "hidden" }}
                 headerStyle={{ backgroundColor: "var(--primary)" }}
                 drawerStyle={{ backgroundColor: "var(--primary)" }}
                 closeIcon={<span className="close_btn">&times;</span>}
+                footer={<>
+                    <Link to="#" className='social'><i className="fab fa-twitter"></i></Link>
+                    <Link to="#" className='social'><i className="fab fa-facebook"></i></Link>
+                    <Link to="#" className='social'><i className="fab fa-instagram"></i></Link></>}
             >
                 <br />
                 <AppNavItem linkText="Home" />
-                <AppNavItem linkText="About Us" />
-                <AppNavItem linkText="Admissions" onClick={showChildrenDrawer} />
+                <AppNavItem linkText="About Us" onClick={showChildrenDrawer}>
+                    <AppNavItem linkText="Our Vision" />
+                    <AppNavItem linkText="Our Mission" />
+                </AppNavItem>
+                <AppNavItem linkText="Admissions" onClick={showChildrenDrawer} >
+                    <AppNavItem linkText="Nursery" />
+                    <AppNavItem linkText="Primary" />
+                    <AppNavItem linkText="Secondary" />
+                </AppNavItem>
                 <AppNavItem linkText="Gallery" />
 
             </Drawer>
@@ -77,9 +91,7 @@ const AppMenu = () => {
                 closeIcon={<span className="close_btn">&times;</span>}
             >
                 <br />
-                <AppNavItem linkText="Nursery" />
-                <AppNavItem linkText="Primary" />
-                <AppNavItem linkText="Secondary" />
+                {childDrawerItem}
             </Drawer>
         </div>
     )

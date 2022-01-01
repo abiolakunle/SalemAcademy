@@ -1,10 +1,9 @@
 
 import './App.css';
 
-import AppNavMenu from './components/molecules/app-nav-menu/AppNavMenu';
 import { useState } from 'react';
 import AppHeader from './components/molecules/app-header/AppHeader';
-import AppNavItem from './components/atoms/app-nav-item/AppNavItem';
+
 import AppFixedParallaxSection from './components/atoms/app-fixed-parallax-section/AppFixedParallaxSection';
 import AppArticleSection from './components/atoms/app-article-section/AppArticleSection';
 import AppArticleImageGrid from './components/atoms/app-article-image-grid/AppArticleImageGrid';
@@ -25,13 +24,6 @@ const App = () => {
   return (
     <div className="App">
       <AppMenu />
-
-      {/* <AppNavMenu open={menuOpened} setMenuOpened={setMenuOpened} openPosition={0} closedPosition={-450}>
-        <AppNavItem linkText="Homes" />
-        <AppNavItem linkText="About Us" />
-        <AppNavItem linkText="Admissions" />
-        <AppNavItem linkText="Gallery" />
-      </AppNavMenu> */}
       <AppHeader backgroundImg={"./assets/images/home-header-banner.webp"} />
       <AppFixedParallaxSection backgroundColor={"var(--dark-blue-1)"} contentPosition={-1}>
         <h2>Our Ethos</h2>
