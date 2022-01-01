@@ -45,7 +45,7 @@ const AppMenu = () => {
         });
     };
     return (
-        <div>
+        <>
 
             <AppHamburger handleClick={(state: boolean) => showDrawer(state)} />
             <Drawer placement='left'
@@ -62,19 +62,24 @@ const AppMenu = () => {
                     <Link to="#" className='social'><i className="fab fa-twitter"></i></Link>
                     <Link to="#" className='social'><i className="fab fa-facebook"></i></Link>
                     <Link to="#" className='social'><i className="fab fa-instagram"></i></Link></>}
+
+                footerStyle={{ display: "flex", paddingBottom: "20px" }}
+                className="app-menu"
             >
                 <br />
-                <AppNavItem linkText="Home" />
-                <AppNavItem linkText="About Us" onClick={showChildrenDrawer}>
-                    <AppNavItem linkText="Our Vision" />
-                    <AppNavItem linkText="Our Mission" />
-                </AppNavItem>
-                <AppNavItem linkText="Admissions" onClick={showChildrenDrawer} >
-                    <AppNavItem linkText="Nursery" />
-                    <AppNavItem linkText="Primary" />
-                    <AppNavItem linkText="Secondary" />
-                </AppNavItem>
-                <AppNavItem linkText="Gallery" />
+                <ul>
+                    <AppNavItem linkText="Home" />
+                    <AppNavItem linkText="About Us" onClick={showChildrenDrawer}>
+                        <AppNavItem linkText="Our Vision" />
+                        <AppNavItem linkText="Our Mission" />
+                    </AppNavItem>
+                    <AppNavItem linkText="Admissions" onClick={showChildrenDrawer} >
+                        <AppNavItem linkText="Nursery" />
+                        <AppNavItem linkText="Primary" />
+                        <AppNavItem linkText="Secondary" />
+                    </AppNavItem>
+                    <AppNavItem linkText="Gallery" />
+                </ul>
 
             </Drawer>
 
@@ -89,11 +94,12 @@ const AppMenu = () => {
                 bodyStyle={{ backgroundColor: "var(--green-grey)", padding: 0 }}
                 headerStyle={{ backgroundColor: "var(--green-grey)" }}
                 closeIcon={<span className="close_btn">&times;</span>}
+                className="app-menu menu2"
             >
                 <br />
                 {childDrawerItem}
             </Drawer>
-        </div>
+        </>
     )
 }
 

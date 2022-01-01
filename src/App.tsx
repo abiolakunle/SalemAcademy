@@ -40,7 +40,7 @@ const App = () => {
 
       </AppArticleSection>
       <AppArticleImageGrid backgroundColor="var(--green-grey)" imageUrl="./assets/images/home-header-banner.webp" imageFirst={true} />
-      <AppArticleImageGrid backgroundColor="var(--dark-blue-1)" imageUrl="./assets/images/home-header-banner.webp" imageFirst={false} />
+      <AppArticleImageGrid backgroundColor="var(--dark-blue-1)" color="var(--white)" imageUrl="./assets/images/home-header-banner.webp" imageFirst={false} />
       <AppArticleImageGrid backgroundColor="var(--light-grey)" imageUrl="./assets/images/home-header-banner.webp" imageFirst={true} />
       <AppHeroBanner backgroundImageUrl={"./assets/images/home-header-banner.webp"} />
 

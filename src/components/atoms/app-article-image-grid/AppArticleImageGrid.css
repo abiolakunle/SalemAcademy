@@ -1,6 +1,6 @@
 .app-article-image-grid{
     
-    max-width: 100vw;
+    
     
 }
 .col-image{
@@ -14,4 +14,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+}
+.aligner-item{
+    margin: 40px;
 }

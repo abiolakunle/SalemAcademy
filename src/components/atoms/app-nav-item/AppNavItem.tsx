@@ -6,7 +6,7 @@ import "./AppNavItem.css"
 const AppNavItem = ({ linkText, onClick, children }: any) => {
     return (
         <>
-            <li className='app_nav_item' onClick={() => { onClick(children) }}>
+            <li className='app_nav_item' onClick={() => { onClick(<ul>{children}</ul>) }}>
 
                 <Link to="#">{linkText}</Link>
                 {/* <i className="fas fa-solid fa-angle-right fa-2x"></i> */}
