@@ -1,6 +1,7 @@
 
+import AppBreadcrumb from "../app-breadcrumb/AppBreadcrumb"
 import "./AppHeader.css"
-const AppHeader = ({ backgroundImg }: any) => {
+const AppHeader = ({ heading, paragraph, backgroundImg, showBreadcrumb }: any) => {
     return (
         <><div className="wgs-header-strip__banner-overlay  wgs-header-strip__banner-overlay-BLACK"> </div>
 
@@ -14,8 +15,8 @@ const AppHeader = ({ backgroundImg }: any) => {
 
 
                     <div className="heading-texts">
-                        <h1>Welcome</h1>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe repellendus, doloremque non ullam quasi nisi facere. Quos consequatur debitis rem aut recusandae tempore, quia sapiente, eum quasi delectus repellendus corporis.</p>
+                        <h1>{heading}</h1>
+                        <p>{paragraph}</p>
                         <div className="mouse_scroll">
 
                             <div className="mouse">
@@ -31,6 +32,7 @@ const AppHeader = ({ backgroundImg }: any) => {
                     </div>
                 </div>
             </header>
+            {showBreadcrumb ? <AppBreadcrumb /> : <></>}
         </>
     )
 }

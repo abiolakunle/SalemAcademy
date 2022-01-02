@@ -1,23 +1,24 @@
 
-import { Link } from 'react-router-dom'
 
+
+import { Link, NavLink } from "react-router-dom"
 import "./AppNavItem.css"
 
-const AppNavItem = ({ linkText, onClick, children }: any) => {
+const AppNavItem = ({ linkText, onClick, children, to = "#" }: any) => {
     return (
         <>
-            <li className='app_nav_item' onClick={() => { onClick(<ul>{children}</ul>) }}>
+            <li>
 
-                <Link to="#">{linkText}</Link>
-                {/* <i className="fas fa-solid fa-angle-right fa-2x"></i> */}
-                {!!onClick ?
+                {!!onClick || !!children ? <Link className='app_nav_item' onClick={() => { onClick(<ul>{children}</ul>) }} to="#"><span>{linkText}</span>
                     <div className="menu-arrows">
                         <div id="cta">
                             <span className="arrow primera next "></span>
                             <span className="arrow segunda next "></span>
                         </div>
                     </div>
-                    : ""}
+                </Link> :
+                    <NavLink className='app_nav_item' to={to}>{linkText}</NavLink>}
+
             </li>
 
         </>

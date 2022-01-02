@@ -6,12 +6,33 @@
   --light-grey1: #aaaaaa;
   --dark-grey: rgb(255, 255, 255, 0.2);
   --white: #ffffff;
-  --prink:#f77e9c99;
+  --pink:#f77e9c99;
   --pink2:#f77e9d;
   --green-grey: #c3d7d2;
   --black-transparent: rgb(0, 0, 0, 0.8);
   --scroll-var: 0px;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--light-grey);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-dark);
+}
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,

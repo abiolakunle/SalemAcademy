@@ -1,6 +1,6 @@
 
 .app_nav_item{
-    padding-left: 50px;
+    padding-left: 80px !important;
     display: flex;
     color: var(--white);
 }
@@ -8,8 +8,16 @@
     background-color: var(--primary-dark)
 }
 
- a {
-    padding: 10px 20px 10px 30px;
+.app_nav_item span{
+    display: inline;
+}
+
+a.app_nav_item.active {
+    background-color: var(--primary-dark);
+}
+
+ .app_nav_item a {
+    padding: 10px 20px 10px 50px;
     text-decoration: none;
     font-size: 15px;
     display: block;
@@ -17,18 +25,20 @@
     text-transform: uppercase;
     font-weight: 400;
     color: #fff;
+    min-height: 40px;
   }
 
 .menu-arrows {
+    display: inline;
     position: relative;
-    align-self: center;
+    top: -8px;
+    left: 15px;
     width: 40px;
     height: 40px;
-    border-radius: 100%;
 }
 
 #cta{
-    width:100%; cursor: pointer; position: absolute;
+    cursor: pointer; 
 }
 
 #cta .arrow{left: 30%;}

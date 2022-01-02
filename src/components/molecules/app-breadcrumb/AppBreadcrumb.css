@@ -1,0 +1,12 @@
+.app-breadcrumb{
+    padding: 30px;
+}
+
+.app-breadcrumb a{
+    color: var(--pink2);
+}
+
+.app-breadcrumb a.active{
+    color: var(--primary-dark);
+    
+}

@@ -53,8 +53,8 @@ const AppMenu = () => {
                 closable={true}
                 onClose={onClose}
                 visible={state.visible}
-                contentWrapperStyle={{ clipPath: "polygon(0 0, 100% 0, 76% 100%, 0% 100%)" }}
-                bodyStyle={{ left: state.childrenDrawer ? state.width / 2 : 0, position: state.childrenDrawer ? "absolute" : "relative", border: 0, padding: 0, backgroundColor: "var(--primary)", overflow: "hidden" }}
+                contentWrapperStyle={{ clipPath: "polygon(0 0, 100% 0, 76% 100%, 0% 100%)", height: "100vh", position: "fixed" }}
+                bodyStyle={{ left: state.childrenDrawer ? state.width / 2 : 0, position: state.childrenDrawer ? "absolute" : "relative", border: 0, padding: 0, backgroundColor: "var(--primary)", overflow: "hidden", width: "100%" }}
                 headerStyle={{ backgroundColor: "var(--primary)" }}
                 drawerStyle={{ backgroundColor: "var(--primary)" }}
                 closeIcon={<span className="close_btn">&times;</span>}
@@ -68,17 +68,14 @@ const AppMenu = () => {
             >
                 <br />
                 <ul>
-                    <AppNavItem linkText="Home" />
-                    <AppNavItem linkText="About Us" onClick={showChildrenDrawer}>
-                        <AppNavItem linkText="Our Vision" />
-                        <AppNavItem linkText="Our Mission" />
-                    </AppNavItem>
+                    <AppNavItem linkText="Home" to="/" />
+                    <AppNavItem linkText="About Us" to="about" />
                     <AppNavItem linkText="Admissions" onClick={showChildrenDrawer} >
                         <AppNavItem linkText="Nursery" />
                         <AppNavItem linkText="Primary" />
                         <AppNavItem linkText="Secondary" />
                     </AppNavItem>
-                    <AppNavItem linkText="Gallery" />
+                    <AppNavItem linkText="Gallery" to="gallery" />
                 </ul>
 
             </Drawer>
