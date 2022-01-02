@@ -3,12 +3,17 @@
     width: 100%;
     position: relative;
     height: auto;
-    padding: 45px 0 45px 0;
+    padding: 45px;
+}
+
+.app-footer .col{
+    padding: 20px !important;
 }
 
 .app-footer a{
     color: var(--light-grey1);
     display: block;
+    text-align: left;
 }
 
 .app-footer h3{
@@ -22,4 +27,9 @@
 
 .app-footer .row{
     width: 100%;
+}
+
+.app-footer p{
+    color: var(--light-grey1);
+    text-align: left;
 }

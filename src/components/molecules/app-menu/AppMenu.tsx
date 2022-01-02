@@ -69,13 +69,17 @@ const AppMenu = () => {
                 <br />
                 <ul>
                     <AppNavItem linkText="Home" to="/" />
-                    <AppNavItem linkText="About Us" to="about" />
-                    <AppNavItem linkText="Admissions" onClick={showChildrenDrawer} >
-                        <AppNavItem linkText="Nursery" />
+                    <AppNavItem linkText="About Salem Academy" to="about" />
+                    <AppNavItem linkText="Events" to="events" />
+                    <AppNavItem linkText="Admission Information" to="admissions" />
+                    <AppNavItem linkText="Our Schools" onClick={showChildrenDrawer} >
                         <AppNavItem linkText="Primary" />
                         <AppNavItem linkText="Secondary" />
                     </AppNavItem>
+                    <AppNavItem linkText="News" to="news" />
+
                     <AppNavItem linkText="Gallery" to="gallery" />
+                    <AppNavItem linkText="Contact Us" to="contact" />
                 </ul>
 
             </Drawer>
