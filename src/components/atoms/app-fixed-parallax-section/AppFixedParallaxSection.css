@@ -195,6 +195,7 @@ width: 24px;
 
 #tsparticles{
   position: relative !important;
+  height: 100vh;
   
 }
 .particles-canvas{
