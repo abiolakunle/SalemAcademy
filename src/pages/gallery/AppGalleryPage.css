@@ -1,0 +1,10 @@
+.app-gallery-image{
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    object-fit: cover;
+}
+
+.app-gallery .picture{
+    margin-bottom: 20px;
+}

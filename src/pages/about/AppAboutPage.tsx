@@ -18,7 +18,7 @@ const AppAboutPage = () => {
             </Container>
 
             <div className='app-about-us'>
-                <div>
+                <div className="heading">
                     <h2>Our Aims and Values</h2>
                 </div>
                 <div>

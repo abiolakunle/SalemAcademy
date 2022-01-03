@@ -55,7 +55,7 @@
 
 /* Big Headings */
 
-.app-about-us > div:first-child {
+.app-about-us .heading {
   position: absolute;
   bottom: 8vh;
   background: #000;
@@ -66,6 +66,9 @@
   z-index: 2;
   filter: opacity(0.8);
 }
+
+
+
 
 .app-about-us > div:first-child h1, .app-about-us > div:first-child h2 {
   margin: 0;
