@@ -191,3 +191,12 @@ width: 24px;
   100% { opacity: 1; }
 }
 /* mouse effect end */
+
+
+#tsparticles{
+  position: relative !important;
+  
+}
+.particles-canvas{
+  position: relative !important;
+}

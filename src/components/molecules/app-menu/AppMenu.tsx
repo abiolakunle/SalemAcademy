@@ -64,7 +64,7 @@ const AppMenu = () => {
                     <Link to="#" className='social'><i className="fab fa-instagram"></i></Link></>}
 
                 footerStyle={{ display: "flex", paddingBottom: "20px" }}
-                className="app-menu"
+                className="app-menu menu1"
             >
                 <br />
                 <ul>
