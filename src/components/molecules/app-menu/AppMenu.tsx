@@ -5,6 +5,7 @@ import AppHamburger from '../../atoms/app-hamburger/AppHamburger';
 //import 'antd/dist/antd.css';
 import AppNavItem from '../../atoms/app-nav-item/AppNavItem';
 import "./AppMenu.css"
+import { isMobile } from 'react-device-detect';
 
 const AppMenu = () => {
     const initialState = { visible: false, width: 450, childrenDrawer: false }
@@ -68,18 +69,18 @@ const AppMenu = () => {
             >
                 <br />
                 <ul>
-                    <AppNavItem linkText="Home" to="/" />
-                    <AppNavItem linkText="About Salem Academy" to="about" />
-                    <AppNavItem linkText="Events" to="events" />
-                    <AppNavItem linkText="Admission Information" to="admissions" />
+                    <AppNavItem linkText="Home" onClick={() => { isMobile && showDrawer(false) }} to="/" />
+                    <AppNavItem linkText="About Salem Academy" onClick={() => { isMobile && showDrawer(false) }} to="about" />
+                    <AppNavItem linkText="Events" onClick={() => { isMobile && showDrawer(false) }} to="events" />
+                    <AppNavItem linkText="Admission Information" onClick={() => { isMobile && showDrawer(false) }} to="admissions" />
                     <AppNavItem linkText="Our Schools" onClick={showChildrenDrawer} >
                         <AppNavItem linkText="Primary" />
                         <AppNavItem linkText="Secondary" />
                     </AppNavItem>
-                    <AppNavItem linkText="News" to="news" />
+                    <AppNavItem linkText="News" onClick={() => { isMobile && showDrawer(false) }} to="news" />
 
-                    <AppNavItem linkText="Gallery" to="gallery" />
-                    <AppNavItem linkText="Contact Us" to="contact" />
+                    <AppNavItem linkText="Gallery" onClick={() => { isMobile && showDrawer(false) }} to="gallery" />
+                    <AppNavItem linkText="Contact Us" onClick={() => { isMobile && showDrawer(false) }} to="contact" />
                 </ul>
 
             </Drawer>

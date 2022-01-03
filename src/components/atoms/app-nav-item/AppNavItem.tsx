@@ -9,7 +9,7 @@ const AppNavItem = ({ linkText, onClick, children, to = "#" }: any) => {
         <>
             <li>
 
-                {!!onClick || !!children ? <Link className='app_nav_item' onClick={() => { onClick(<ul>{children}</ul>) }} to="#"><span>{linkText}</span>
+                {!!children ? <Link className='app_nav_item' onClick={() => { onClick(<ul>{children}</ul>) }} to="#"><span>{linkText}</span>
                     <div className="menu-arrows">
                         <div id="cta">
                             <span className="arrow primera next "></span>
