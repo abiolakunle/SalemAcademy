@@ -17,7 +17,7 @@ const AppNavItem = ({ linkText, onClick, children, to = "#" }: any) => {
                         </div>
                     </div>
                 </Link> :
-                    <NavLink className='app_nav_item' to={to}>{linkText}</NavLink>}
+                    <NavLink onClick={() => { onClick(false) }} className='app_nav_item' to={to}>{linkText}</NavLink>}
 
             </li>
 

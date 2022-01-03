@@ -14,7 +14,7 @@ const AppMenu = () => {
 
 
 
-    const showDrawer = (opened: boolean) => {
+    const toggleDrawer = (opened: boolean) => {
         setState({
             ...state,
             visible: opened,
@@ -45,10 +45,16 @@ const AppMenu = () => {
             width: initialState.width
         });
     };
+
+    const closeMain = (ev: any) => {
+
+        console.log(ev)
+        toggleDrawer(false);
+    }
     return (
         <>
 
-            <AppHamburger handleClick={(state: boolean) => showDrawer(state)} />
+            <AppHamburger handleClick={(state: boolean) => toggleDrawer(state)} />
             <Drawer placement='left'
                 width={state.width}
                 closable={true}
@@ -69,18 +75,18 @@ const AppMenu = () => {
             >
                 <br />
                 <ul>
-                    <AppNavItem linkText="Home" onClick={() => { isMobile && showDrawer(false) }} to="/" />
-                    <AppNavItem linkText="About Salem Academy" onClick={() => { isMobile && showDrawer(false) }} to="about" />
-                    <AppNavItem linkText="Events" onClick={() => { isMobile && showDrawer(false) }} to="events" />
-                    <AppNavItem linkText="Admission Information" onClick={() => { isMobile && showDrawer(false) }} to="admissions" />
+                    <AppNavItem linkText="Home" onClick={toggleDrawer} to="/" />
+                    <AppNavItem linkText="About Salem Academy" onClick={toggleDrawer} to="about" />
+                    <AppNavItem linkText="Events" onClick={toggleDrawer} to="events" />
+                    <AppNavItem linkText="Admission Information" onClick={toggleDrawer} to="admissions" />
                     <AppNavItem linkText="Our Schools" onClick={showChildrenDrawer} >
-                        <AppNavItem linkText="Primary" />
-                        <AppNavItem linkText="Secondary" />
+                        <AppNavItem linkText="Primary" onClick={toggleDrawer} />
+                        <AppNavItem linkText="Secondary" onClick={toggleDrawer} />
                     </AppNavItem>
-                    <AppNavItem linkText="News" onClick={() => { isMobile && showDrawer(false) }} to="news" />
+                    <AppNavItem linkText="News" onClick={toggleDrawer} to="news" />
 
-                    <AppNavItem linkText="Gallery" onClick={() => { isMobile && showDrawer(false) }} to="gallery" />
-                    <AppNavItem linkText="Contact Us" onClick={() => { isMobile && showDrawer(false) }} to="contact" />
+                    <AppNavItem linkText="Gallery" onClick={toggleDrawer} to="gallery" />
+                    <AppNavItem linkText="Contact Us" onClick={toggleDrawer} to="contact" />
                 </ul>
 
             </Drawer>

@@ -8,7 +8,6 @@ const AppBreadcrumb = () => {
     return (
         <div className="app-breadcrumb">
             {breadcrumbs.map((value, index) => {
-                console.log(value, index)
 
                 return <Fragment key={index}> <NavLink to={value.key} >{value.breadcrumb} </NavLink> &nbsp;  {index !== breadcrumbs.length - 1 ? <i className="fas fa-angle-right"></i> : <></>} &nbsp;   </Fragment>
             })}

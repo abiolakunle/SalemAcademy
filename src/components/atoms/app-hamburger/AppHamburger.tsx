@@ -14,9 +14,8 @@ const Hamburger = ({ handleClick }: any) => {
     }
 
     const handleClickOutside = (event: any) => {
-        console.log(event.target, ref.current)
+
         if (ref.current && !(ref.current as HTMLDivElement).contains(event.target)) {
-            console.log("fired")
             open(false);
         }
     };

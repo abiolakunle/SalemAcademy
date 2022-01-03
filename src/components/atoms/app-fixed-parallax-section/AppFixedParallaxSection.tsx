@@ -13,15 +13,7 @@ const AppFixedParallaxSection = ({ backgroundColor, contentPosition, children }:
         }
     }, [])
 
-    const particlesInit = (main: any) => {
-        console.log(main);
 
-        // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
-    };
-
-    const particlesLoaded = (container: any) => {
-        console.log(container);
-    };
 
 
     return (
@@ -31,8 +23,6 @@ const AppFixedParallaxSection = ({ backgroundColor, contentPosition, children }:
                 <Particles
                     id="tsparticles"
                     canvasClassName="particles-canvas"
-                    init={particlesInit}
-                    loaded={particlesLoaded}
                     options={{
                         background: {
                             color: {
