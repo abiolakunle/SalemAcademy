@@ -1,0 +1,139 @@
+
+.app-about-us { background: #801638; position: relative; }
+
+.app-about-us, .app-about-us > * {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+.app-about-us  * { transition: all .3s ease 0s; }
+
+/* Background colours */
+
+.app-about-us div + div article:nth-child(1) { background: var(--dark-blue-1); }
+
+.app-about-us div + div article:nth-child(2) { background:  var(--primary-dark); }
+
+.app-about-us div + div article:nth-child(3) { background: #027878; }
+
+.app-about-us div + div article:nth-child(4) { background: #801638; }
+
+.app-about-us div + div article:nth-child(5),.app-about-us   div + div { background:  var(--pink) }
+
+/* Main layout */
+
+.app-about-us,.app-about-us div + div {
+  width: 100%;
+  height: 50vh;
+}
+
+.app-about-us div + div {
+  list-style: none;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+/* Articles */
+
+.app-about-us  div + div article {
+  flex: initial;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  vertical-align: bottom;
+  box-sizing: border-box;
+  padding: 5vh 3vw;
+  position: relative;
+}
+
+/* Big Headings */
+
+.app-about-us > div:first-child {
+  position: absolute;
+  bottom: 8vh;
+  background: #000;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+ padding: .5rem;
+  z-index: 2;
+  filter: opacity(0.8);
+}
+
+.app-about-us > div:first-child h1, .app-about-us > div:first-child h2 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Hover interaction */
+
+.app-about-us  div + div:hover article {
+  flex: initial;
+  width: 10%;
+}
+
+.app-about-us  div + div article:hover { width: 60%; }
+
+.app-about-us  article > div {
+  opacity: 0;
+  transition: opacity .2s ease 0;
+}
+
+.app-about-us  div + div article:hover > div {
+  opacity: 1;
+  transition: opacity .3s ease .3s;
+}
+
+/* navigation */
+
+.app-about-us  div + div article > h2 {
+  bottom: 2vh;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  font-size: 2vh;
+}
+
+/* Article layouts */
+
+.app-about-us  article div {
+  text-align: left;
+  width: 58vw;
+}
+
+.app-about-us article div p, article div div h2, article div h3 { margin: 0 0 1em 0; }
+
+.app-about-us  h1, h2, h3, h4, h5, h6 { text-transform: uppercase; }
+
+.app-about-us  article div p { width: 40vw; }
+@media (max-width: 900px) {
+
+  .app-about-us   div + div article { padding: 2vh 3vw; }
+
+   .app-about-us  div + div article > h2 {
+    transform: rotate(90deg);
+    bottom: 23vh;
+    min-width: 12em;
+    text-align: left;
+    transform: rotate(-90deg);
+    transform-origin: 0 0 0;
+    opacity: 1;
+    }
+
+    .app-about-us  div + div article:hover > h2 { opacity: 0; }
+
+    .app-about-us  article div p { width: 50vw; }
+
+    .app-about-us  article div {
+    max-height: calc(72%);
+    overflow-y: auto;
+    }
+}
