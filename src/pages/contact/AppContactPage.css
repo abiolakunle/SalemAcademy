@@ -1,0 +1,21 @@
+.contact-box{
+    padding: 0px;
+}
+
+.contact-items{
+    background-color: var(--primary-dark);
+}
+
+.contact-icon{
+    margin: 20px;
+}
+
+.contact-items h4 {
+    color: var(--dark-grey);
+}
+
+.contact-items a, .contact-items p {
+    color: var(--white ) !important;
+    margin-left: 50px;
+    margin-right: 50px;
+}
