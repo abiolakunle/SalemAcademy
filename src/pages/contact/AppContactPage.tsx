@@ -40,8 +40,8 @@ const AppContactPage = () => {
 
     const defaultProps = {
         center: {
-            lat: 59.95,
-            lng: 30.33
+            lat: 8.990606790568766,
+            lng: 7.362837410766699
         },
         zoom: 11
     };
@@ -53,7 +53,7 @@ const AppContactPage = () => {
         showBreadcrumb={true} />
         <AppPageTitle title="Contact us" />       <div style={{ height: '50vh', width: '100%' }}>
             <GoogleMapReact
-                bootstrapURLKeys={{ key: "/* YOUR KEY HERE */" }}
+                bootstrapURLKeys={{ key: "AIzaSyCVYpjVFIupyMOO3qaeCnAQnQf0nZaGae0" }}
                 defaultCenter={defaultProps.center}
                 defaultZoom={defaultProps.zoom}
             >
