@@ -4,8 +4,10 @@ import { Route, Routes } from 'react-router-dom'
 import App404Page from '../pages/404/App404Page'
 import AppAboutPage from '../pages/about/AppAboutPage'
 import AppContactPage from '../pages/contact/AppContactPage'
+import AppNewsPage from '../pages/news/AppNewsPage'
 import AppGalleryPage from '../pages/gallery/AppGalleryPage'
 import AppHomePage from '../pages/home/AppHomePage'
+import AppEventsPage from '../pages/events/AppEventsPage'
 
 const AppRouter = () => {
     return (
@@ -15,6 +17,8 @@ const AppRouter = () => {
             <Route path="about" element={<AppAboutPage />} />
             <Route path="/gallery" element={<AppGalleryPage />} />
             <Route path="/contact" element={<AppContactPage />} />
+            <Route path="/events" element={<AppEventsPage />} />
+            <Route path="/news" element={<AppNewsPage />} />
             <Route path="*" element={<App404Page />} />
         </Routes>
 

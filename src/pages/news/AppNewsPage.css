@@ -1,0 +1,62 @@
+.app-events .event-item{
+ min-height: 300px;
+ background-size: cover;
+ position: relative;
+ margin-bottom:50px;
+}
+
+/* .app-events, .app-events .events {
+    min-height: 80vh;
+} */
+
+.app-events .date-card, .app-events .data-card-bg{
+    width: 30%;
+    height: auto;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.app-events .data-card-bg{
+    width: 100%;
+    height: 100%;
+    position: absolute !important;
+    top: 0px;
+    left: 0px;
+
+}
+
+.app-events .date-card {
+    
+
+    color: var(--dark-blue-1);
+    padding: 10px;
+}
+
+.app-events .date-card .date{
+    font-size: 50px;
+    font-weight: 700 !important;
+}
+
+.data-card-bg{
+  filter: opacity(0.95);
+    background-color: var(--pink2);
+
+}
+
+
+.app-events .date-card > *{
+    display: block;
+    position: relative;
+}
+
+
+.app-events .title-box{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: var(  --dark-blue-1);
+    color: var(--white);
+}
+
+
