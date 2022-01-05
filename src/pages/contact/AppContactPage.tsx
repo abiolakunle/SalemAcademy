@@ -6,6 +6,7 @@ import emailLottie from "../../assets/lottie/email.json"
 import Lottie from "react-lottie";
 import phoneLottie from "../../assets/lottie/phone.json"
 import mapLottie from "../../assets/lottie/map.json"
+import callLottie from "../../assets/lottie/call.json"
 import { Link } from "react-router-dom";
 import GoogleMapReact from 'google-map-react';
 
@@ -34,6 +35,11 @@ const AppContactPage = () => {
     const email = {
         ...defaultOptions,
         animationData: emailLottie,
+    }
+
+    const call = {
+        ...defaultOptions,
+        animationData: callLottie,
     }
 
     const MarkerComponent = ({ icon }: any) => <div>{icon}</div>;
@@ -65,11 +71,11 @@ const AppContactPage = () => {
             </GoogleMapReact>
         </div> <Container fluid>
             <Row className="contact-items">
-                <Col className="contact-box" md={4}>
+                <Col className="contact-box" md={3}>
                     <img width="100%" src="./assets/images/home-header-banner.webp" alt="salem" />
 
                 </Col>
-                <Col className="contact-box" md={4}>
+                <Col className="contact-box" md={3}>
                     <div className="contact-icon">
                         <Lottie width="30%" options={map} />
                     </div>
@@ -78,31 +84,41 @@ const AppContactPage = () => {
                         Federal Housing Authority Estate, 12 Road, and phase ii by Total Filling Station, Lugbe, Abuja.
                     </p>
                 </Col>
-                <Col className="contact-box" md={4}>
+                <Col className="contact-box" md={3}>
                     <img width="100%" src="./assets/images/home-header-banner.webp" alt="salem" />
                 </Col>
-                <Col className="contact-box" md={4}>
+                <Col className="contact-box" md={3}>
                     <div className="contact-icon">
                         <Lottie width="20%" options={phone} />
                     </div>
-                    <h4>Phone & Social:</h4>
-                    <p><a href="tel:+2348106035445">+2348106035445</a></p>
-                    <p><a href="tel:+2348136372870">+2348136372870</a></p>
+                    <h4>Social:</h4>
 
                     <Link to="#" className='social'><i className="fab fa-twitter fa-2x"></i></Link>
                     <Link to="#" className='social'><i className="fab fa-facebook fa-2x"></i></Link>
                     <Link to="#" className='social'><i className="fab fa-instagram  fa-2x"></i></Link>
                 </Col>
-                <Col className="contact-box" md={4}>
+                <Col className="contact-box" md={3}>
+                    <div className="contact-icon">
+                        <Lottie width="20%" options={call} />
+                    </div>
+                    <h4>Phone:</h4>
+                    <p><a href="tel:+2348106035445">+2348106035445</a></p>
+                    <p><a href="tel:+2348136372870">+2348136372870</a></p>
+
+                </Col>
+                <Col className="contact-box" md={3}>
                     <img width="100%" src="./assets/images/home-header-banner.webp" alt="salem" />
 
                 </Col>
-                <Col md={4}>
+                <Col md={3}>
                     <div className="contact-icon">
                         <Lottie width="30%" options={email} />
                     </div>
                     <h4>Email:</h4>
                     <p><a href="mailto:info@salemacademyng.com">info@salemacademyng.com</a></p>
+                </Col>
+                <Col className="contact-box" md={3}>
+                    <img width="100%" src="./assets/images/home-header-banner.webp" alt="salem" />
                 </Col>
             </Row>
         </Container>

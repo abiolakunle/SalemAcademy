@@ -12,6 +12,7 @@
 
 .contact-items h4 {
     color: var(--dark-grey);
+    margin-bottom: 20px;
 }
 
 .contact-items a, .contact-items p {
