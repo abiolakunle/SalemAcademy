@@ -8,6 +8,7 @@ import AppNewsPage from '../pages/news/AppNewsPage'
 import AppGalleryPage from '../pages/gallery/AppGalleryPage'
 import AppHomePage from '../pages/home/AppHomePage'
 import AppEventsPage from '../pages/events/AppEventsPage'
+import AppAdmissionPage from '../pages/admission/AppAdmissionPage'
 
 const AppRouter = () => {
     return (
@@ -19,6 +20,7 @@ const AppRouter = () => {
             <Route path="/contact" element={<AppContactPage />} />
             <Route path="/events" element={<AppEventsPage />} />
             <Route path="/news" element={<AppNewsPage />} />
+            <Route path="/admissions" element={<AppAdmissionPage />} />
             <Route path="*" element={<App404Page />} />
         </Routes>
 
