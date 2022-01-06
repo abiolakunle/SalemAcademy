@@ -2,7 +2,7 @@ import { Col, Container, Row } from "react-bootstrap"
 import AppReadMoreBtn from "../app-read-more-btn/AppReadMoreBtn"
 import "./AppArticleImageGrid.css"
 
-const AppArticleImageGrid = ({ backgroundColor, imageUrl, imageFirst, color }: any) => {
+const AppArticleImageGrid = ({ backgroundColor, imageUrl, imageFirst, color, children }: any) => {
 
 
     const image = () => {
@@ -16,16 +16,7 @@ const AppArticleImageGrid = ({ backgroundColor, imageUrl, imageFirst, color }: a
 
 
                 <div className="aligner-item">
-
-                    <span className="news-date">
-                        17 December 2021				</span>
-                    <h2>Latest News</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic aliquam inventore nisi ipsam illo maxime soluta et enim deleniti, tempore odio quam ex. Magnam at fugit, ex tempora saepe nesciunt.    </p>
-
-                    <AppReadMoreBtn color={color} borderColor={color} />
-
-
+                    {children}
                 </div>
             </Col>
         )

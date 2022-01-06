@@ -8,7 +8,6 @@ const AppArticleSection = ({ items, backgroundColor, children }: any) => {
             {children}
             {/* <Link to="#">Read more <i className="fas fa-arrow-right"></i></Link> */}
 
-            <AppReadMoreBtn />
         </div>
     )
 }

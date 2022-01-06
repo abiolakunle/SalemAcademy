@@ -6,20 +6,24 @@ import AppFixedParallaxSection from '../../components/atoms/app-fixed-parallax-s
 import AppHeroBanner from '../../components/atoms/app-hero-banner/AppHeroBanner'
 import AppReadMoreBtn from '../../components/atoms/app-read-more-btn/AppReadMoreBtn'
 import AppHeader from '../../components/molecules/app-header/AppHeader'
+import { useNavigate } from 'react-router-dom';
 
 const AppHomePage = () => {
+
+    const navigateTo = useNavigate();
     return (
         <>
+
             <AppHeader
                 heading={<>Welcome</>}
                 paragraph={<>Welcome to Salem Academy. As the founder, I am passionate about Salem and our wonderful kids. It has been the pleasure of my life to create a school for future leaders, thought leaders, visionaries, professionals, and entrepreneurs who are kind, passionate, respectful, innovative and excellent at all they do.</>}
                 backgroundImg={"./assets/images/home-header-banner.webp"} />
             <AppFixedParallaxSection backgroundColor={"var(--dark-blue-1)"} contentPosition={-1}>
-                <h2>Our Ethos</h2>
+                <h2>Our Vision</h2>
                 <p>Our Vision is to build excellence in character and learning in children. Ensuring that they attain the right foundational grooming that will make them exceptional community, corporate, and business leaders in the future</p>
-                <AppReadMoreBtn borderColor="var(--white)" color="var(--white)" />
+                <AppReadMoreBtn onClick={() => { navigateTo("about") }} borderColor="var(--white)" color="var(--white)" />
             </AppFixedParallaxSection>
-            <AppFixedParallaxSection backgroundColor={"#000"} contentPosition={-2}>
+            <AppFixedParallaxSection backgroundImage="./assets/images/selem-chem.jfif" contentPosition={-2} showOvelay={true}>
                 <h2>Salem Academy</h2>
 
             </AppFixedParallaxSection>
@@ -30,30 +34,57 @@ const AppHomePage = () => {
                 <p>We offer a truly global all-round education, all our pupils and students are equipped with 21st century skills such as creative thinking, communication, and critical thinking. By the end of their education at Salem, all our pupils and students are ready for the next level of their education and they will excel in all that they do. We look forward to welcoming you to Salem Academy, where everything we do is unto excellence.</p>
 
             </AppArticleSection>
-            <AppArticleImageGrid backgroundColor="var(--green-grey)" imageUrl="./assets/images/home-header-banner.webp" imageFirst={true} />
-            <AppArticleImageGrid backgroundColor="var(--dark-blue-1)" color="var(--white)" imageUrl="./assets/images/home-header-banner.webp" imageFirst={false} />
-            <AppArticleImageGrid backgroundColor="var(--light-grey)" imageUrl="./assets/images/home-header-banner.webp" imageFirst={true} />
-            <AppHeroBanner backgroundImageUrl={"./assets/images/home-header-banner.webp"} />
+            <AppArticleImageGrid backgroundColor="var(--green-grey)" imageUrl="./assets/images/home-header-banner.webp" imageFirst={true} >
+                <span className="news-date">
+                    17 December 2021
+                </span>
+                <h2>Latest News</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic aliquam inventore nisi ipsam illo maxime soluta et enim deleniti, tempore odio quam ex. Magnam at fugit, ex tempora saepe nesciunt.    </p>
+
+                <AppReadMoreBtn onClick={() => { navigateTo("/news") }} />
+            </AppArticleImageGrid>
+            <AppArticleImageGrid backgroundColor="var(--dark-blue-1)" color="var(--white)" imageUrl="./assets/images/home-header-banner.webp" imageFirst={false} >
+                <span className="news-date">
+                    17 December 2021
+                </span>
+                <h2>Latest Event</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic aliquam inventore nisi ipsam illo maxime soluta et enim deleniti, tempore odio quam ex. Magnam at fugit, ex tempora saepe nesciunt.    </p>
+
+                <AppReadMoreBtn text="Upcoming Events" onClick={() => { navigateTo("events") }} color="var(--white)" borderColor="var(--white)" />
+            </AppArticleImageGrid>
+            {/* <AppArticleImageGrid backgroundColor="var(--light-grey)" imageUrl="./assets/images/home-header-banner.webp" imageFirst={true} >
+                <span className="news-date">
+                    17 December 2021
+                </span>
+                <h2>Latest News</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic aliquam inventore nisi ipsam illo maxime soluta et enim deleniti, tempore odio quam ex. Magnam at fugit, ex tempora saepe nesciunt.    </p>
+
+                <AppReadMoreBtn />
+            </AppArticleImageGrid> */}
+            {/* <AppHeroBanner backgroundImageUrl={"./assets/images/home-header-banner.webp"} /> */}
 
 
             <Container fluid style={{ backgroundColor: "var(--green-grey)" }}>
                 <Row>
-                    <Col md={6}>
+                    <Col md={12}>
                         <AppArticleSection backgroundColor="var(--green-grey)">
-                            <h2>Join us</h2>
+                            <h2>Join Salem Academy Today</h2>
 
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil quo maxime nulla suscipit error nesciunt eligendi ullam aperiam ipsa dolores cupiditate exercitationem nisi quasi quis, asperiores sunt veniam at voluptatibus.</p>
-
+                            <AppReadMoreBtn onClick={() => { navigateTo("/admissions") }} text="Join Now!!" />
                         </AppArticleSection>
                     </Col>
-                    <Col md={6}>
+                    {/* <Col md={6}>
                         <AppArticleSection backgroundColor="var(--green-grey)" >
                             <h2>Support us</h2>
 
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil quo maxime nulla suscipit error nesciunt eligendi ullam aperiam ipsa dolores cupiditate exercitationem nisi quasi quis, asperiores sunt veniam at voluptatibus.</p>
 
                         </AppArticleSection>
-                    </Col>
+                    </Col> */}
                 </Row>
             </Container>
         </>

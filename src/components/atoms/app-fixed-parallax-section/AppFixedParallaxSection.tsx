@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import Particles from 'react-tsparticles'
 import "./AppFixedParallaxSection.css"
 
-const AppFixedParallaxSection = ({ backgroundColor, contentPosition, children }: any) => {
+const AppFixedParallaxSection = ({ backgroundColor, backgroundImage, contentPosition, children, showOvelay }: any) => {
 
     useEffect(() => {
         window.onscroll = function () {
@@ -19,7 +19,8 @@ const AppFixedParallaxSection = ({ backgroundColor, contentPosition, children }:
     return (
 
         <>
-            <section className="app-parallax-section" style={{ backgroundColor }}>
+            <section className="app-parallax-section" style={{ backgroundColor, backgroundImage: `url(${backgroundImage})` }}  >
+                {showOvelay && <div className='parallax-overlay'></div>}
                 <Particles
                     id="tsparticles"
                     canvasClassName="particles-canvas"
