@@ -56,7 +56,7 @@ const AppGalleryPage = () => {
     return (
         <div>
             <AppHeader
-                backgroundImg={"./assets/images/home-header-banner.webp"}
+                backgroundImg={"./assets/images/fine_art.jfif"}
                 heading={<>Gallery</>}
                 paragraph={<>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, est ab. Blanditiis ullam, eaque cumque magni molestias, quas accusantium quasi consequuntur possimus, deleniti ipsam veritatis excepturi reiciendis optio iusto dolorem!</>}
                 showBreadcrumb={true} />

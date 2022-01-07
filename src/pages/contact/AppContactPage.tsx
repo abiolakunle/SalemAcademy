@@ -53,7 +53,7 @@ const AppContactPage = () => {
     };
 
     return (<>       <AppHeader
-        backgroundImg={"./assets/images/home-header-banner.webp"}
+        backgroundImg={"./assets/images/volleyball.jfif"}
         heading={<>Contact us</>}
         paragraph={<>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, est ab. Blanditiis ullam, eaque cumque magni molestias, quas accusantium quasi consequuntur possimus, deleniti ipsam veritatis excepturi reiciendis optio iusto dolorem!</>}
         showBreadcrumb={true} />

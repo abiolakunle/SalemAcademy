@@ -6,7 +6,7 @@ const AppEventsPage = () => {
     return (
         <>
             <AppHeader
-                backgroundImg={"./assets/images/home-header-banner.webp"}
+                backgroundImg={"./assets/images/home_econs.jfif"}
                 heading={<>Events</>}
                 paragraph={<>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, est ab. Blanditiis ullam, eaque cumque magni molestias, quas accusantium quasi consequuntur possimus, deleniti ipsam veritatis excepturi reiciendis optio iusto dolorem!</>}
                 showBreadcrumb={true} />

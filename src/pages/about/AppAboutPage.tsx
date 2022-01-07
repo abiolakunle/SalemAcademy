@@ -7,7 +7,7 @@ const AppAboutPage = () => {
     return (
         <>
             <AppHeader
-                backgroundImg={"./assets/images/home-header-banner.webp"}
+                backgroundImg={"./assets/images/salem-academy-ground-view.jfif"}
                 heading={<>About Salem Academy</>}
                 paragraph={<>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, est ab. Blanditiis ullam, eaque cumque magni molestias, quas accusantium quasi consequuntur possimus, deleniti ipsam veritatis excepturi reiciendis optio iusto dolorem!</>}
                 showBreadcrumb={true} />

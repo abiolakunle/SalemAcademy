@@ -8,7 +8,7 @@ const AppAdmissionPage = () => {
     return (
         <>
             <AppHeader
-                backgroundImg={"./assets/images/home-header-banner.webp"}
+                backgroundImg={"./assets/images/salem-academy-view.webp"}
                 heading={<>Admission Information</>}
                 paragraph={<>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, est ab. Blanditiis ullam, eaque cumque magni molestias, quas accusantium quasi consequuntur possimus, deleniti ipsam veritatis excepturi reiciendis optio iusto dolorem!</>}
                 showBreadcrumb={true} />
@@ -25,14 +25,14 @@ const AppAdmissionPage = () => {
                             <h5>Purchase the Admission Form</h5>
                             <p>The first step is to purchase an admission form, fill in the information, and return it to the school. To do this, You can visit the school premises to purchase a form at the reception or school accounts office.</p>
                             <ul>
-                                <li>Nursery Forms - N5000
+                                <li>  Nursery Forms  <span class="tag"> &#8358;5000</span>
 
                                 </li>
                                 <li>
-                                    Primary Forms - N5000
+                                    Primary Forms  <span class="tag"> &#8358;5000</span>
                                 </li>
                                 <li>
-                                    Secondary Forms - N10000
+                                    Secondary Forms <span class="tag">&#8358;10000 </span>
                                 </li>
                             </ul>
                         </div>
