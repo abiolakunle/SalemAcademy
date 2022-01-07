@@ -8,7 +8,7 @@ const AppHeader = ({ heading, paragraph, backgroundImg, showBreadcrumb }: any) =
             <header style={{ backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center", backgroundImage: `url(${backgroundImg})` }} id="app-header">
                 <div className="header-full-overlay"></div>
                 <div className="app-logo">
-                    <img width="100%" src="./assets/images/salem-logo.png" alt="salem academy" />
+                    <img width="100%" src="/assets/images/salem-logo.png" alt="salem academy" />
                     <span>Salem Academy</span>
                 </div>
                 <div className="heading-wrapper">

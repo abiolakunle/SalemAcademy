@@ -9,6 +9,8 @@ import AppGalleryPage from '../pages/gallery/AppGalleryPage'
 import AppHomePage from '../pages/home/AppHomePage'
 import AppEventsPage from '../pages/events/AppEventsPage'
 import AppAdmissionPage from '../pages/admission/AppAdmissionPage'
+import AppPrimarySchoolPage from '../pages/primary-school/AppPrimarySchoolPage'
+import AppSecondarySchoolPage from '../pages/secondary-school/AppSecondarySchoolPage'
 
 const AppRouter = () => {
     return (
@@ -21,6 +23,8 @@ const AppRouter = () => {
             <Route path="/events" element={<AppEventsPage />} />
             <Route path="/news" element={<AppNewsPage />} />
             <Route path="/admissions" element={<AppAdmissionPage />} />
+            <Route path="/schools/primary" element={<AppPrimarySchoolPage />} />
+            <Route path="/schools/secondary" element={<AppSecondarySchoolPage />} />
             <Route path="*" element={<App404Page />} />
         </Routes>
 
