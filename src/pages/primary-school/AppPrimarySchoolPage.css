@@ -1,8 +1,11 @@
 .app-primary-sch{
     margin: 50px auto;
-
-    
 }
+
+.app-primary-sch{
+    text-align: justify;
+}
+
 .app-primary-sch ul{
      text-align: left;
  }
@@ -13,10 +16,8 @@
     z-index: -1;
 }
  .accordion-wrapper {
-    
     overflow: hidden;
     box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
-
     margin:0 auto;
 }
 .accordion-wrapper .accordion {
@@ -51,7 +52,7 @@
 }
 .accordion-wrapper .accordion-content {
     max-height: 0;
-    padding: 0 16px;
+    padding: 0 250px;
     color: rgba(4,57,94,1);
     background: white;
     -webkit-transition: all 0.3s;
@@ -71,6 +72,6 @@
 }
 .accordion-wrapper input:checked ~ .accordion-content {
     max-height: 100vh;
-    padding: 16px;
+    padding: 30px;
 }
   

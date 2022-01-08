@@ -1,0 +1,17 @@
+
+.app-secondary-sch {
+    text-align: justify;
+    margin-bottom: 50px;
+}
+.app-secondary-sch ul{
+     text-align: left;
+ }
+
+
+.app-secondary-sch h3{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px;
+    background-color: var(--primary);
+    color: var(--white);
+}

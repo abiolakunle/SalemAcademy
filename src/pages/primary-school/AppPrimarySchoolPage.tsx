@@ -22,11 +22,6 @@ const AppPrimarySchoolPage = () => {
                 </p>
                 <h3>We Promote</h3>
 
-
-
-
-
-
                 <ul className="text-left">
                     <li><i className="fas fa-check-double"></i> &nbsp;
                         High standards in all subjects, particularly Mathematics, English and Sciences.
@@ -53,7 +48,7 @@ const AppPrimarySchoolPage = () => {
 
                 <div className="accordion-wrapper">
                     <div className="accordion">
-                        <input type="radio" name="radio-a" id="check1" checked />
+                        <input type="radio" name="radio-a" id="check1" />
                         <label className="accordion-label" htmlFor="check1">SCHOOL HOURS</label>
                         <div className="accordion-content">
                             The school opens at 7:30 am, <br />

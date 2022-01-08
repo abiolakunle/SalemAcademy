@@ -23,8 +23,8 @@ const AppRouter = () => {
             <Route path="/events" element={<AppEventsPage />} />
             <Route path="/news" element={<AppNewsPage />} />
             <Route path="/admissions" element={<AppAdmissionPage />} />
-            <Route path="/schools/primary" element={<AppPrimarySchoolPage />} />
-            <Route path="/schools/secondary" element={<AppSecondarySchoolPage />} />
+            <Route path="/primary-school" element={<AppPrimarySchoolPage />} />
+            <Route path="/secondary-school" element={<AppSecondarySchoolPage />} />
             <Route path="*" element={<App404Page />} />
         </Routes>
 
