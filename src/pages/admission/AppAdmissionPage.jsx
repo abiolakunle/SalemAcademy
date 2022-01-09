@@ -25,14 +25,14 @@ const AppAdmissionPage = () => {
                             <h5>Purchase the Admission Form</h5>
                             <p>The first step is to purchase an admission form, fill in the information, and return it to the school. To do this, You can visit the school premises to purchase a form at the reception or school accounts office.</p>
                             <ul>
-                                <li>  Nursery Forms  <span class="tag"> &#8358;5000</span>
+                                <li>  Nursery Forms  <span class="tag"> &#8358;5,000</span>
 
                                 </li>
                                 <li>
-                                    Primary Forms  <span class="tag"> &#8358;5000</span>
+                                    Primary Forms  <span class="tag"> &#8358;5,000</span>
                                 </li>
                                 <li>
-                                    Secondary Forms <span class="tag">&#8358;10000 </span>
+                                    Secondary Forms <span class="tag">&#8358;10,000 </span>
                                 </li>
                             </ul>
                         </div>
