@@ -42,14 +42,14 @@
 }
 .main-timeline .timeline-year{
     background: #c03e5f;
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 600;
-    line-height: 110px;
     width: 120px;
     height: 100%;
     position: absolute;
     top: -20px;
     left: -60px;
+    padding-top: 5px;
 }
 .main-timeline .title{
     font-size: 25px;

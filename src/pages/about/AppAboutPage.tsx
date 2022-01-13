@@ -1,7 +1,8 @@
 import "./AppAboutPage.css"
 import AppPageTitle from '../../components/atoms/app-page-title/AppPageTitle'
 import AppHeader from '../../components/molecules/app-header/AppHeader'
-import { Container } from "react-bootstrap"
+import { Col, Container, Row } from "react-bootstrap"
+import AppSimplePage from "../../components/atoms/app-simple-page/AppSimplePage"
 
 const AppAboutPage = () => {
     return (
@@ -14,8 +15,33 @@ const AppAboutPage = () => {
             <AppPageTitle title="About Salem Academy" />
 
             <Container style={{ marginBottom: 100 }}>
-                <p>For over 12 years, Salem Academy has enabled pupils and students develop and learn by giving them the right tools and resources to truly flourish. Our team of highly qualified academic and non-academic staff focus on ensuring that each child is well educated, and that their individual needs are met. Like our name Salem implies, our school is a peaceful and serene learning environment for children to excel. We offer a truly global all-round education, all our pupils and students are equipped with 21st century skills such as creative thinking, communication, and critical thinking. By the end of their education at Salem, all our pupils and students are ready for the next level of their education and they will excel in all that they do. We look forward to welcoming you to Salem Academy, where everything we do is unto excellence.</p>
+
+                <AppSimplePage fluid>
+                    <p>
+                        At Salem Academy, students receive so much more than an ordinary education. We pride ourselves on creating a unique, exciting and serene environment that embraces all types of learners and promotes growth both academically and personally. For over 12 years, Salem Academy has enabled the learning and development of pupils and students by giving them the right tools and resources to truly flourish. Our team of highly qualified academic and non-academic staff focus on ensuring that each child is well educated, and that their individual needs are catered for. Like the name Salem implies, our school provides a peaceful and serene learning environment for children to excel. The training and education we offer at Salem Academy is in line with global best practices and industry standard, as all our pupils and students are equipped with 21st century skills such as creative thinking, communication, and problem solving. By the end of their education at Salem, all our pupils and students are ready for the next level of their mental and cognitive development and they will excel in all that they do. We look forward to welcoming you to Salem Academy, where everything we do is unto excellence.
+                    </p>
+
+                    <p>Interested in learning more about Salem Academy? &nbsp; We invite you to keep exploring our website, and get in touch with questions about our values, academics and more. Join Us today!</p>
+
+                    <h3>Our Academics</h3>
+                    <Row>
+                        <Col>          <p>The academic program at Salem Academy places an emphasis on every aspect of student growth and development, while meeting statutory requirements. Satisfactory number of students per class and exceptional, qualified teachers allow us to offer a comfortable and inclusive educational setting, while ensuring each student receives the individualized attention and support they need.</p>
+                            <p>The all-round, inclusive education on offer at Salem Academy has always been a core component of our values , and it is focused on bringing out the very best in every pupil. We are looking forward to developing this even further over the coming years.</p>
+                            <p>At Salem, we have high expectations and this encourages our students to believe in themselves, to be analytical, to be resolute and to show ambition both in and out of the classroom. Our students feel happy and valued, which gives them the confidence and enthusiasm for life-long learning, needed to succeed in a fast changing world.</p>
+
+
+
+                        </Col>
+                        <Col>   <p>Respect for tradition and an openness to innovation are valued and taught and we encourage our pupils to work with, and learn from each other, whilst also showing courage to stand up for what they believe. We are confident that we can challenge and develop all those who come to us at whatever age, stretching the most able whilst supporting those who need a helping hand.</p>
+
+                            <p>We hope that you will find our website helpful and that it will give you a sense of the values that our school stands for. It is, however, only a website and is no substitute for a visit. </p>
+                            <p>We do hope you will come and see for yourself what we do at Salem Academy each and every day, and find out what it could do for your child too.</p>
+                        </Col>
+                    </Row>
+                </AppSimplePage>
             </Container>
+
+
 
             <div className='app-about-us'>
                 <div className="heading">

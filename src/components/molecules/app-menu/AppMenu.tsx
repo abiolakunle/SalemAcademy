@@ -80,8 +80,10 @@ const AppMenu = () => {
                     <AppNavItem linkText="Events" onClick={toggleDrawer} to="events" />
                     <AppNavItem linkText="Admission Information" onClick={toggleDrawer} to="admissions" />
                     <AppNavItem linkText="Our Schools" onClick={showChildrenDrawer} >
-                        <AppNavItem linkText="Primary" onClick={toggleDrawer} to="primary-school" />
                         <AppNavItem linkText="Secondary" onClick={toggleDrawer} to="secondary-school" />
+                        <AppNavItem linkText="Primary" onClick={toggleDrawer} to="primary-school" />
+                        <AppNavItem linkText="Nursery" onClick={toggleDrawer} to="nursery-school" />
+                        <AppNavItem linkText="Busy Baby Crèche" onClick={toggleDrawer} to="creche-school" />
                     </AppNavItem>
                     <AppNavItem linkText="News" onClick={toggleDrawer} to="news" />
 

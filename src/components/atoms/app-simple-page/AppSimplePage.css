@@ -1,17 +1,17 @@
-/* 
-.app-secondary-sch {
+
+.app-simple-page {
     text-align: justify;
     margin-bottom: 50px;
 }
-.app-secondary-sch ul{
+.app-simple-page ul{
      text-align: left;
  }
 
 
-.app-secondary-sch h3{
+.app-simple-page h3{
     width: 100%;
     margin-top: 50px;
     padding: 10px;
     background-color: var(--dark-blue-1);
     color: var(--white);
-} */
+}

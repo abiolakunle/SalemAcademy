@@ -11,6 +11,8 @@ import AppEventsPage from '../pages/events/AppEventsPage'
 import AppAdmissionPage from '../pages/admission/AppAdmissionPage'
 import AppPrimarySchoolPage from '../pages/primary-school/AppPrimarySchoolPage'
 import AppSecondarySchoolPage from '../pages/secondary-school/AppSecondarySchoolPage'
+import AppCrecheSchoolPage from '../pages/creche-school/AppCrecheSchoolPage'
+import AppNurserySchoolPage from '../pages/nursery-school/AppNurserySchoolPage'
 
 const AppRouter = () => {
     return (
@@ -25,6 +27,8 @@ const AppRouter = () => {
             <Route path="/admissions" element={<AppAdmissionPage />} />
             <Route path="/primary-school" element={<AppPrimarySchoolPage />} />
             <Route path="/secondary-school" element={<AppSecondarySchoolPage />} />
+            <Route path="/creche-school" element={<AppCrecheSchoolPage />} />
+            <Route path="/nursery-school" element={<AppNurserySchoolPage />} />
             <Route path="*" element={<App404Page />} />
         </Routes>
 
