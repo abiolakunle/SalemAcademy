@@ -21,11 +21,11 @@ const AppSecondarySchoolPage = () => {
 
                 <Row>
 
-                    <Col>
+                    <Col md={12} lg={6}>
                         <p>Salem Secondary School commenced operation in September 2010 with a class of just about 10 students, since then, it has grown to be a Center of Academic Excellence. Our curriculum is a rich blend that challenges learners to brace up to traditional rudiments of the scholarly world such as reading, writing, listening, reasoning and research. It also adopts global perspectives that develops learners’ ability to think critically, analytically, systematically and creatively. We teach in accordance to the National Policy of Education (2014) which provides among others, for three years of Upper Basic Education (JSS 1-3) with broad-based career-specific subjects consolidated by categories and three years of Senior Secondary Education that culminates in Senior School Certificate Examination (SSCE), Unified Tertiary Matriculation Examination (UTME), Post-UTME and subsequent admission into tertiary institutions. Our students have been writing Basic Education Certificate Examinations (BECEs) with pass rates in the range of 90 – 100%. The same feat has been recorded with the Senior Secondary Certificate Examinations (SSCEs). </p>
                         <p>Learning at Salem secondary school takes place in a world-class facility that houses classrooms, laboratories, a state-of-the-art ICT center, an interactive library, and student-teacher learning resources. </p></Col>
 
-                    <Col>
+                    <Col md={12} lg={6}>
 
                         <p>Our students have an unmatched track record of easily transitioning from secondary school to tertiary Institutions on their first attempt, due to the robust, quality education and preparation they receive at Salem Secondary School. </p>
 

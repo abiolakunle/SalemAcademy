@@ -16,7 +16,7 @@ const AppNurserySchoolPage = () => {
 
             <AppSimplePage>
                 <Row>
-                    <Col>
+                    <Col md={12} lg={6}>
                         <p>At our Nursery School we have one aim, to give each pupil an education which enables them to become excellent. We focus on academic excellence, character development and the nurturing of a global perspective, we equip children for all the challenges that life can offer.</p>
 
 
@@ -25,7 +25,7 @@ const AppNurserySchoolPage = () => {
                         <p>At Salem Academy the Nursery School is usually the earliest level a child begins their formal education, as such we take extra care to ensure that they feel welcome, comfortable, and happy to make the transition from being exclusively with parents and caregivers, to being in school.</p>
 
                     </Col>
-                    <Col>
+                    <Col md={12} lg={6}>
                         <p>Salem Nursery has been in operation for over 10 years and in those years, we have entrenched the overall vision of the entire academy which is building excellence in character and learning into all that we do. We remain true to this by creating and promoting a healthy and serene atmosphere for raising strong and sound minds borne out of faith.
                         </p>
 

@@ -53,7 +53,7 @@ const AppEventsPage = () => {
                             <div className="timeline">
                                 <a href="#" className="timeline-content">
                                     <div className="timeline-icon"><i className="fas fa-calendar-alt"></i></div>
-                                    <div className="timeline-year">Jan <br /> 2022 </div>
+                                    <div className="timeline-year">Jan  2022 </div>
                                     <h3 className="title">Salem Academy school resumption</h3>
                                     <p className="description">
                                         <br />
@@ -65,7 +65,7 @@ const AppEventsPage = () => {
                             <div className="timeline">
                                 <a href="#" className="timeline-content">
                                     <div className="timeline-icon"><i className="fas fa-calendar-alt"></i></div>
-                                    <div className="timeline-year">19th <br /> Nov <br /> 2022</div>
+                                    <div className="timeline-year">19th  Nov  2022</div>
                                     <h3 className="title">Cultural Day Celebration</h3>
                                     <p className="description">
                                         <br />
@@ -79,7 +79,7 @@ const AppEventsPage = () => {
                             <div className="timeline">
                                 <a href="#" className="timeline-content">
                                     <div className="timeline-icon"><i className="fas fa-calendar-alt"></i></div>
-                                    <div className="timeline-year">15th <br /> Dec <br />2022</div>
+                                    <div className="timeline-year">15th  Dec 2022</div>
                                     <h3 className="title">Christmas Carol</h3>
                                     <p className="description">
                                         <br />

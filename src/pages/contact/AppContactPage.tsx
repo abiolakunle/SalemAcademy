@@ -72,7 +72,7 @@ const AppContactPage = () => {
         </div> <Container fluid>
             <Row className="contact-items">
                 <Col className="contact-box" md={3}>
-                    <img width="100%" src="./assets/images/home-header-banner.webp" alt="salem" />
+                    <img width="100%" src="./assets/images/Salem1.jpg" alt="salem" />
 
                 </Col>
                 <Col className="contact-box" md={3}>
@@ -85,7 +85,7 @@ const AppContactPage = () => {
                     </p>
                 </Col>
                 <Col className="contact-box" md={3}>
-                    <img width="100%" src="./assets/images/home-header-banner.webp" alt="salem" />
+                    <img width="100%" src="./assets/images/Salem3.jpg" alt="salem" />
                 </Col>
                 <Col className="contact-box" md={3}>
                     <div className="contact-icon">
@@ -108,7 +108,7 @@ const AppContactPage = () => {
 
                 </Col>
                 <Col className="contact-box" md={3}>
-                    <img width="100%" src="./assets/images/home-header-banner.webp" alt="salem" />
+                    <img width="100%" src="./assets/images/Salem10.jpg" alt="salem" />
 
                 </Col>
                 <Col md={3}>
@@ -119,7 +119,7 @@ const AppContactPage = () => {
                     <p><a href="mailto:info@salemacademyng.com">info@salemacademyng.com</a></p>
                 </Col>
                 <Col className="contact-box" md={3}>
-                    <img width="100%" src="./assets/images/home-header-banner.webp" alt="salem" />
+                    <img width="100%" src="./assets/images/Salem7.jpg" alt="salem" />
                 </Col>
             </Row>
         </Container>

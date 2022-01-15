@@ -25,14 +25,14 @@ const AppAboutPage = () => {
 
                     <h3>Our Academics</h3>
                     <Row>
-                        <Col>          <p>The academic program at Salem Academy places an emphasis on every aspect of student growth and development, while meeting statutory requirements. Satisfactory number of students per class and exceptional, qualified teachers allow us to offer a comfortable and inclusive educational setting, while ensuring each student receives the individualized attention and support they need.</p>
+                        <Col md={12} lg={6}>          <p>The academic program at Salem Academy places an emphasis on every aspect of student growth and development, while meeting statutory requirements. Satisfactory number of students per class and exceptional, qualified teachers allow us to offer a comfortable and inclusive educational setting, while ensuring each student receives the individualized attention and support they need.</p>
                             <p>The all-round, inclusive education on offer at Salem Academy has always been a core component of our values , and it is focused on bringing out the very best in every pupil. We are looking forward to developing this even further over the coming years.</p>
                             <p>At Salem, we have high expectations and this encourages our students to believe in themselves, to be analytical, to be resolute and to show ambition both in and out of the classroom. Our students feel happy and valued, which gives them the confidence and enthusiasm for life-long learning, needed to succeed in a fast changing world.</p>
 
 
 
                         </Col>
-                        <Col>   <p>Respect for tradition and an openness to innovation are valued and taught and we encourage our pupils to work with, and learn from each other, whilst also showing courage to stand up for what they believe. We are confident that we can challenge and develop all those who come to us at whatever age, stretching the most able whilst supporting those who need a helping hand.</p>
+                        <Col md={12} lg={6}>   <p>Respect for tradition and an openness to innovation are valued and taught and we encourage our pupils to work with, and learn from each other, whilst also showing courage to stand up for what they believe. We are confident that we can challenge and develop all those who come to us at whatever age, stretching the most able whilst supporting those who need a helping hand.</p>
 
                             <p>We hope that you will find our website helpful and that it will give you a sense of the values that our school stands for. It is, however, only a website and is no substitute for a visit. </p>
                             <p>We do hope you will come and see for yourself what we do at Salem Academy each and every day, and find out what it could do for your child too.</p>

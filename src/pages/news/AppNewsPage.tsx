@@ -27,7 +27,9 @@ const AppNewsPage = () => {
                                 <span className='year'>2022</span>
                             </div>
 
-                            <div className='title-box'><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+                            <div className='title-box'>
+                                {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> */}
+                            </div>
                         </div>
                     </Col>
                     <Col md={4} >
@@ -41,7 +43,9 @@ const AppNewsPage = () => {
                                 <span className='year'>2022</span>
                             </div>
 
-                            <div className='title-box'><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+                            <div className='title-box'>
+                                {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> */}
+                            </div>
                         </div>
                     </Col>
                     <Col md={4} >
@@ -55,7 +59,9 @@ const AppNewsPage = () => {
                                 <span className='year'>2022</span>
                             </div>
 
-                            <div className='title-box'><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+                            <div className='title-box'>
+                                {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> */}
+                            </div>
                         </div>
                     </Col>
                     <Col md={4} >
@@ -69,7 +75,9 @@ const AppNewsPage = () => {
                                 <span className='year'>2022</span>
                             </div>
 
-                            <div className='title-box'><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+                            <div className='title-box'>
+                                {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> */}
+                            </div>
                         </div>
                     </Col>
                     <Col md={4} >
@@ -83,7 +91,9 @@ const AppNewsPage = () => {
                                 <span className='year'>2022</span>
                             </div>
 
-                            <div className='title-box'><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+                            <div className='title-box'>
+                                {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> */}
+                            </div>
                         </div>
                     </Col>
                     <Col md={4} >
@@ -97,7 +107,11 @@ const AppNewsPage = () => {
                                 <span className='year'>2022</span>
                             </div>
 
-                            <div className='title-box'><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+                            <div className='title-box'>
+
+                                {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> */}
+
+                            </div>
                         </div>
                     </Col>
                 </Row>
