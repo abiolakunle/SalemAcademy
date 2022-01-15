@@ -34,19 +34,19 @@ const AppHomePage = () => {
                 <AppReadMoreBtn onClick={() => { navigateTo("about") }} />
 
             </AppArticleSection>
-            <AppArticleImageGrid backgroundColor="var(--green-grey)" imageUrl="./assets/images/home-header-banner.webp" imageFirst={true} >
-                <span className="home-date">
+            <AppArticleImageGrid backgroundColor="var(--green-grey)" imageUrl="./assets/images/Salem8.jpg" imageFirst={true} >
+                {/* <span className="home-date">
                     17 December 2021
-                </span>
+                </span> */}
                 <h2>Latest News</h2>
                 <p>Want to find out what we've been up to? </p>
 
                 <AppReadMoreBtn onClick={() => { navigateTo("/news") }} />
             </AppArticleImageGrid>
-            <AppArticleImageGrid backgroundColor="var(--dark-blue-1)" color="var(--white)" imageUrl="./assets/images/home-header-banner.webp" imageFirst={false} >
-                <span className="home-date">
+            <AppArticleImageGrid backgroundColor="var(--dark-blue-1)" color="var(--white)" imageUrl="./assets/images/volleyball.jfif" imageFirst={false} >
+                {/* <span className="home-date">
                     17 December 2021
-                </span>
+                </span> */}
                 <h2>Latest Event</h2>
                 <p>
                     See our past and upcoming events    </p>
