@@ -42,7 +42,7 @@ const AppEventsPage = () => {
             <AppHeader
                 backgroundImg={"./assets/images/home_econs.jfif"}
                 heading={<>Events</>}
-                paragraph={<>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, est ab. Blanditiis ullam, eaque cumque magni molestias, quas accusantium quasi consequuntur possimus, deleniti ipsam veritatis excepturi reiciendis optio iusto dolorem!</>}
+                paragraph={<>The all-round, inclusive education on offer at Salem Academy has always been a core component of our values , and it is focused on bringing out the very best in every pupil. We are looking forward to developing this even further over the coming years.</>}
                 showBreadcrumb={true} />
             <AppPageTitle title="Events" />
 

@@ -1,0 +1,15 @@
+.app-home .app-parallax-section p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+.app-home .app-parallax-section  h2{
+        text-align: center;
+}
+
+.app-home .home-date{
+   margin-bottom: 40px !important;
+}
+
+.app-home .aligner-item h2{
+    margin-top: 40px;
+}

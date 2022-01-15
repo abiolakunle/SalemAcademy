@@ -53,9 +53,9 @@ const AppContactPage = () => {
     };
 
     return (<>       <AppHeader
-        backgroundImg={"./assets/images/volleyball.jfif"}
+        backgroundImg={"./assets/images/contact-us.jpg"}
         heading={<>Contact us</>}
-        paragraph={<>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, est ab. Blanditiis ullam, eaque cumque magni molestias, quas accusantium quasi consequuntur possimus, deleniti ipsam veritatis excepturi reiciendis optio iusto dolorem!</>}
+        paragraph={<>We pride ourselves on creating a unique, exciting and serene environment that embraces all types of learners and promotes growth both academically and personally. For over 12 years, Salem Academy has enabled the learning and development of pupils and students by giving them the right tools and resources to truly flourish. </>}
         showBreadcrumb={true} />
         <AppPageTitle title="Contact us" />       <div style={{ height: '50vh', width: '100%' }}>
             <GoogleMapReact
@@ -93,9 +93,10 @@ const AppContactPage = () => {
                     </div>
                     <h4>Social:</h4>
 
-                    <Link to="#" className='social'><i className="fab fa-twitter fa-2x"></i></Link>
-                    <Link to="#" className='social'><i className="fab fa-facebook fa-2x"></i></Link>
-                    <Link to="#" className='social'><i className="fab fa-instagram  fa-2x"></i></Link>
+                    {/* <Link to="#" className='social'><i className="fab fa-twitter fa-2x"></i></Link> */}
+                    <a rel="noreferrer" target="_blank" href="https://web.facebook.com/salemacademyng" className='social'><i className="fab fa-facebook"></i></a>
+                    <a rel="noreferrer" href="https://www.instagram.com/salemacademylugbeabuja" target="_blank" className='social'><i className="fab fa-instagram"></i></a>
+                    <a rel="noreferrer" href="https://www.linkedin.com/company/salem-academy-abuja" target="_blank" className='social'><i className="fab fa-linkedin-in"></i></a>
                 </Col>
                 <Col className="contact-box" md={3}>
                     <div className="contact-icon">

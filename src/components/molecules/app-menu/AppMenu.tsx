@@ -66,9 +66,11 @@ const AppMenu = () => {
                 drawerStyle={{ backgroundColor: "var(--primary)" }}
                 closeIcon={<span className="close_btn">&times;</span>}
                 footer={<>
-                    <Link to="#" className='social'><i className="fab fa-twitter"></i></Link>
-                    <Link to="#" className='social'><i className="fab fa-facebook"></i></Link>
-                    <Link to="#" className='social'><i className="fab fa-instagram"></i></Link></>}
+                    {/* <Link to="#" className='social'><i className="fab fa-twitter"></i></Link> */}
+                    <a rel="noreferrer" target="_blank" href="https://web.facebook.com/salemacademyng" className='social'><i className="fab fa-facebook"></i></a>
+                    <a rel="noreferrer" href="https://www.instagram.com/salemacademylugbeabuja" target="_blank" className='social'><i className="fab fa-instagram"></i></a>
+                    <a rel="noreferrer" href="https://www.linkedin.com/company/salem-academy-abuja" target="_blank" className='social'><i className="fab fa-linkedin-in"></i></a>
+                </>}
 
                 footerStyle={{ display: "flex", paddingBottom: "20px" }}
                 className="app-menu menu1"

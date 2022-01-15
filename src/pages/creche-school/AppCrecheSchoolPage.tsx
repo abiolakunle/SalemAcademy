@@ -6,14 +6,14 @@ import AppHeader from '../../components/molecules/app-header/AppHeader'
 const AppCrecheSchoolPage = () => {
     return (<>
         <AppHeader
-            backgroundImg={"/assets/images/fine_art.jfif"}
+            backgroundImg={"/assets/images/creche.webp"}
             heading={<>Salem Busy Baby Crèche</>}
-            paragraph={<>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, est ab. Blanditiis ullam, eaque cumque magni molestias, quas accusantium quasi consequuntur possimus, deleniti ipsam veritatis excepturi reiciendis optio iusto dolorem!</>}
+            paragraph={<>An early brain development has a lasting impact on a child’s ability to learn and succeed in school and life. We ensure that our children develop brain connections through their everyday experiences and interactions.</>}
             showBreadcrumb={true} />
         <AppPageTitle title="Salem Busy Baby Crèche" />
 
         <AppSimplePage>
-            <p>At Salem Busy Babies Creche, we offer excellence in infant baby day care. Our babies are always busy as our name implies, all the children in our care engage in activities that aid their mental and all round development. From birth to age 5, a child’s brain develops more than at any other time in life. And early brain development has a lasting impact on a child’s ability to learn and succeed in school and life. We ensure that our children develop brain connections through their everyday experiences and interactions.  </p>
+            <p>At Salem Busy Babies Creche, we offer excellence in infant baby day care. Our babies are always busy as our name implies, all the children in our care engage in activities that aid their mental and all round development. From birth to age 5, a child’s brain develops more than at any other time in life. An early brain development has a lasting impact on a child’s ability to learn and succeed in school and life. We ensure that our children develop brain connections through their everyday experiences and interactions.  </p>
 
             <p>Extraordinary planning and design underlie our learning environment. Whether it is the serene and conducive learning domain, the bright and spacious feel of our classroom, the multiple age-appropriate outdoor play areas, or the strategically positioned close circuit camera, it is all designed to achieve one goal to offer your child the most exciting, engaging  and secure learning environment possible. We believe that every child is special, and we treat them as such. We ensure each child is paid attention to and that they feel comfortable and are completely at ease. </p>
 

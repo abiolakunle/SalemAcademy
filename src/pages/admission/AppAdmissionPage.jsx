@@ -10,7 +10,7 @@ const AppAdmissionPage = () => {
             <AppHeader
                 backgroundImg={"./assets/images/salem-academy-view.webp"}
                 heading={<>Admission Information</>}
-                paragraph={<>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, est ab. Blanditiis ullam, eaque cumque magni molestias, quas accusantium quasi consequuntur possimus, deleniti ipsam veritatis excepturi reiciendis optio iusto dolorem!</>}
+                paragraph={<>Our students feel happy and valued, which gives them the confidence and enthusiasm for life-long learning, needed to succeed in a fast changing world.</>}
                 showBreadcrumb={true} />
             <AppPageTitle title="Admission Information" />
 

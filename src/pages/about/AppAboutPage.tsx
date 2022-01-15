@@ -9,8 +9,8 @@ const AppAboutPage = () => {
         <>
             <AppHeader
                 backgroundImg={"./assets/images/salem-academy-ground-view.jfif"}
-                heading={<>About Salem Academy</>}
-                paragraph={<>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, est ab. Blanditiis ullam, eaque cumque magni molestias, quas accusantium quasi consequuntur possimus, deleniti ipsam veritatis excepturi reiciendis optio iusto dolorem!</>}
+                heading={<>About <br />Salem Academy</>}
+                paragraph={<>At Salem, we have high expectations and this encourages our students to believe in themselves, to be analytical, to be resolute and to show ambition both in and out of the classroom. Our students feel happy and valued, which gives them the confidence and enthusiasm for life-long learning, needed to succeed in a fast changing world.</>}
                 showBreadcrumb={true} />
             <AppPageTitle title="About Salem Academy" />
 

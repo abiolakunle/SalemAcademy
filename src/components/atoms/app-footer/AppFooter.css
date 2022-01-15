@@ -14,6 +14,7 @@
     color: var(--light-grey1);
     display: block;
     text-align: left;
+    margin: 5px;
 }
 
 .app-footer h3{
@@ -22,7 +23,7 @@
 
 .app-footer .social{
     display: inline;
-    padding: 10px;
+
 }
 
 .app-footer .row{
@@ -32,4 +33,15 @@
 .app-footer p{
     color: var(--light-grey1);
     text-align: left;
+}
+.app-footer h3{
+    text-align: left;
+    margin-top: 20px;
+}
+
+
+
+.app-footer .socials a{
+    float: left;
+        padding-right: 10px;
 }

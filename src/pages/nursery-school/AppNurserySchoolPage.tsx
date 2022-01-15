@@ -8,7 +8,7 @@ const AppNurserySchoolPage = () => {
     return (
         <>
             <AppHeader
-                backgroundImg={"/assets/images/fine_art.jfif"}
+                backgroundImg={"/assets/images/nurrsery.webp"}
                 heading={<>Nursery School</>}
                 paragraph={<>“Education is not something that a teacher does, it is a natural process that develops spontaneously in a human” – Maria Montessori </>}
                 showBreadcrumb={true} />
