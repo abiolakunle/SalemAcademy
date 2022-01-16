@@ -13,24 +13,27 @@ import AppPrimarySchoolPage from '../pages/primary-school/AppPrimarySchoolPage'
 import AppSecondarySchoolPage from '../pages/secondary-school/AppSecondarySchoolPage'
 import AppCrecheSchoolPage from '../pages/creche-school/AppCrecheSchoolPage'
 import AppNurserySchoolPage from '../pages/nursery-school/AppNurserySchoolPage'
+import ScrollToTop from '../components/atoms/scroll-to-top/ScrollToTop'
 
 const AppRouter = () => {
     return (
 
-        <Routes>
-            <Route path="/" element={<AppHomePage />} />
-            <Route path="about" element={<AppAboutPage />} />
-            <Route path="/gallery" element={<AppGalleryPage />} />
-            <Route path="/contact" element={<AppContactPage />} />
-            <Route path="/events" element={<AppEventsPage />} />
-            <Route path="/news" element={<AppNewsPage />} />
-            <Route path="/admissions" element={<AppAdmissionPage />} />
-            <Route path="/primary-school" element={<AppPrimarySchoolPage />} />
-            <Route path="/secondary-school" element={<AppSecondarySchoolPage />} />
-            <Route path="/creche-school" element={<AppCrecheSchoolPage />} />
-            <Route path="/nursery-school" element={<AppNurserySchoolPage />} />
-            <Route path="*" element={<App404Page />} />
-        </Routes>
+        <ScrollToTop>
+            <Routes>
+                <Route path="/" element={<AppHomePage />} />
+                <Route path="about" element={<AppAboutPage />} />
+                <Route path="/gallery" element={<AppGalleryPage />} />
+                <Route path="/contact" element={<AppContactPage />} />
+                <Route path="/events" element={<AppEventsPage />} />
+                <Route path="/news" element={<AppNewsPage />} />
+                <Route path="/admissions" element={<AppAdmissionPage />} />
+                <Route path="/primary-school" element={<AppPrimarySchoolPage />} />
+                <Route path="/secondary-school" element={<AppSecondarySchoolPage />} />
+                <Route path="/creche-school" element={<AppCrecheSchoolPage />} />
+                <Route path="/nursery-school" element={<AppNurserySchoolPage />} />
+                <Route path="*" element={<App404Page />} />
+            </Routes>
+        </ScrollToTop>
 
     )
 }

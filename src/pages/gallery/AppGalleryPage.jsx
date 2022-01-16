@@ -44,14 +44,14 @@ const options = {
 const AppGalleryPage = () => {
 
     const photos = [
-        { imageUrl: "./assets/images/home-header-banner.webp", title: "Salem" },
-        { imageUrl: "./assets/images/home-header-banner.webp", title: "Salem" },
-        { imageUrl: "./assets/images/home-header-banner.webp", title: "Salem" },
-        { imageUrl: "./assets/images/home-header-banner.webp", title: "Salem" },
-        { imageUrl: "./assets/images/home-header-banner.webp", title: "Salem" },
-        { imageUrl: "./assets/images/home-header-banner.webp", title: "Salem" },
-        { imageUrl: "./assets/images/home-header-banner.webp", title: "Salem" },
-        { imageUrl: "./assets/images/home-header-banner.webp", title: "Salem" }];
+        { imageUrl: "./assets/images/fine_art.jfif", title: "Salem" },
+        { imageUrl: "./assets/images/home_econs.jfif", title: "Salem" },
+        { imageUrl: "./assets/images/volleyball.jfif", title: "Salem" },
+        { imageUrl: "./assets/images/nurrsery.webp", title: "Salem" },
+        { imageUrl: "./assets/images/Salem7.jpg", title: "Salem" },
+        { imageUrl: "./assets/images/Salem10.jpg", title: "Salem" },
+        { imageUrl: "./assets/images/selem-chem.jfif", title: "Salem" },
+        { imageUrl: "./assets/images/creche.webp", title: "Salem" }];
 
     return (
         <div>

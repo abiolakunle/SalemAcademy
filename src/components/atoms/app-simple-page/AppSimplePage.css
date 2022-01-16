@@ -15,3 +15,36 @@
     background-color: var(--dark-blue-1);
     color: var(--white);
 }
+
+
+
+
+
+ @media (max-width: 575.98px) { 
+.app-simple-page h3{
+    font-size: .8rem;
+}
+
+ }
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+.app-simple-page h3{
+    font-size: .8rem;
+}
+
+ }
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+.app-simple-page h3{
+    font-size: .8rem;
+}
+
+ }
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+
+
+}
