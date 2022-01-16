@@ -8,7 +8,7 @@ const AppPrimarySchoolPage = () => {
     return (
         <>
             <AppHeader
-                backgroundImg={"/assets/images/fine_art.jfif"}
+                backgroundImg={"/assets/images/Salem11.jpg"}
                 heading={<>Primary School</>}
                 paragraph={<>We help students prepare for life in senior school. We encourage positive traits such as excellence, respect, discipline, Faith and integrity. We use our unique curriculum to give children a strong foundation for learning and living.</>}
                 showBreadcrumb={true} />
