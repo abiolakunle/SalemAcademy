@@ -8,8 +8,13 @@ import AppHeader from '../../components/molecules/app-header/AppHeader'
 import { useNavigate } from 'react-router-dom';
 import "./AppHomePage.css"
 
-const AppHomePage = () => {
+import newsItems from "../../data/news";
+import { eventList } from "../../data/events"
+import ReactMarkdown from 'react-markdown'
 
+const AppHomePage = () => {
+    const latestNews = newsItems[0];
+    const latestEvent = eventList[0]
     const navigateTo = useNavigate();
     return (
         <div className='app-home'>
@@ -35,23 +40,24 @@ const AppHomePage = () => {
 
             </AppArticleSection>
             <AppArticleImageGrid backgroundColor="var(--green-grey)" imageUrl="./assets/images/Salem8.jpg" imageFirst={true} >
-                {/* <span className="home-date">
-                    17 December 2021
-                </span> */}
+                <span className="home-date">
+                    {latestNews.date.toDateString()}
+                </span>
                 <h2>Latest News</h2>
-                <p>Want to find out what we've been up to? </p>
+
+                <ReactMarkdown>{latestNews.body.slice(0, 200) + "..."}</ReactMarkdown>
 
                 <AppReadMoreBtn onClick={() => { navigateTo("/news") }} />
             </AppArticleImageGrid>
             <AppArticleImageGrid backgroundColor="var(--dark-blue-1)" color="var(--white)" imageUrl="./assets/images/volleyball.jfif" imageFirst={false} >
-                {/* <span className="home-date">
-                    17 December 2021
-                </span> */}
-                <h2>Latest Event</h2>
+                <span className="home-date">
+                    {latestEvent.date.toDateString()}
+                </span>
+                <h2>Upcoming Event</h2>
                 <p>
-                    See our past and upcoming events    </p>
+                    {latestEvent.title}  </p>
 
-                <AppReadMoreBtn text="Upcoming Events" onClick={() => { navigateTo("events") }} color="var(--white)" borderColor="var(--white)" />
+                <AppReadMoreBtn text="See More Events" onClick={() => { navigateTo("events") }} color="var(--white)" borderColor="var(--white)" />
             </AppArticleImageGrid>
             {/* <AppArticleImageGrid backgroundColor="var(--light-grey)" imageUrl="./assets/images/home-header-banner.webp" imageFirst={true} >
                 <span className="news-date">

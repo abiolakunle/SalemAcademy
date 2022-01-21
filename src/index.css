@@ -109,6 +109,10 @@ li {
   list-style-type: none;
 }
 
+.modal-content{
+border-radius: 0px !important;
+}
+
 
  @media (max-width: 575.98px) { 
 h1{
