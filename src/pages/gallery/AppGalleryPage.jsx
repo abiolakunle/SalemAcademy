@@ -58,7 +58,7 @@ const AppGalleryPage = () => {
             <AppHeader
                 backgroundImg={"./assets/images/fine_art.jfif"}
                 heading={<>Gallery</>}
-                paragraph={<>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, est ab. Blanditiis ullam, eaque cumque magni molestias, quas accusantium quasi consequuntur possimus, deleniti ipsam veritatis excepturi reiciendis optio iusto dolorem!</>}
+                paragraph={<>We are confident that we can challenge and develop all those who come to us at whatever age, stretching the most able whilst supporting those who need a helping hand.</>}
                 showBreadcrumb={true} />
             <AppPageTitle title="Gallery" />
             <Container fluid className="app-gallery">

@@ -3,7 +3,9 @@
 }
 
 #app-header p{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+   
+          line-height: 1.5em;
 }
 
 .wgs-header-strip__banner-overlay-BLACK {
@@ -26,7 +28,6 @@ z-index: 2;
     position: absolute;
     width: 55%;
     height: calc(100vh);
-    
     left: -10px;
     transform: skewX(-13deg);
     transform-origin: left top;
@@ -36,10 +37,11 @@ z-index: 2;
 .heading-wrapper{
   position: absolute;
   top: 25%;
-  left: 20%;
+  left: 10%;
   margin: 0px auto;
-  min-width: 45%;
+  width: 50%;
   z-index: 2;
+
 }
 
 .heading-texts{
@@ -47,13 +49,13 @@ z-index: 2;
     position: absolute;
     z-index: 3;
     text-align: left;
-    max-width: 450px;
+    max-width: 550px;
     z-index: 2;
 }
 
 
 .heading-texts p{
-    line-height: 25px;
+
     margin-top: 25px ;
 }
 
@@ -98,13 +100,17 @@ z-index: 2;
 }
 
 .heading-wrapper{
-    min-width: 100%;
+    min-width: 90%;
     left: 5%;
+      top: 20%;
 }
 
 #app-header p {
     font-size: 1rem;
+          line-height: 1.4em;
 }
+
+
 
  }
 

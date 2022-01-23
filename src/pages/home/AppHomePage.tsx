@@ -7,6 +7,8 @@ import AppReadMoreBtn from '../../components/atoms/app-read-more-btn/AppReadMore
 import AppHeader from '../../components/molecules/app-header/AppHeader'
 import { useNavigate } from 'react-router-dom';
 import "./AppHomePage.css"
+// @ts-ignore
+import VideoPlayer from 'react-video-js-player';
 
 import newsItems from "../../data/news";
 import { eventList } from "../../data/events"
@@ -16,13 +18,25 @@ const AppHomePage = () => {
     const latestNews = newsItems[0];
     const latestEvent = eventList[0]
     const navigateTo = useNavigate();
+    // eslint-disable-next-line no-restricted-globals
+    var w = screen.width
+    // eslint-disable-next-line no-restricted-globals
+    var h = screen.height
     return (
         <div className='app-home'>
 
             <AppHeader
                 heading={<>Welcome</>}
-                paragraph={<>Welcome to Salem Academy. As the founder, I am passionate about Salem and our wonderful kids. It has been the pleasure of my life to create a school for future leaders, thought leaders, visionaries, professionals, and entrepreneurs who are kind, passionate, respectful, innovative and excellent at all they do.</>}
+                paragraph={<><p>Welcome to Salem Academy. As the founder, I am passionate about Salem and our wonderful kids. It has been the pleasure of my life to create a school for future leaders, thought leaders, visionaries, professionals, and entrepreneurs who are kind, passionate, respectful, innovative and excellent at all they do. It is our aim to shape the process of creating well-rounded young people who can face the challenges of the 21st century and beyond.
+                </p>
+                    <p>Our success is primarily down to our overarching principle and belief in excellence, it is indeed the founding block of our school. All our teachers and students have fully embraced our value of excellence and as such, it defines all that we do. I believe that today’s students will be tomorrow’s citizens, leaders, workers, and parents. therefore, a good education is an investment with enduring benefits.</p>
+                </>}
                 backgroundImg={"./assets/images/home-header-banner.webp"} />
+
+
+
+
+
             <AppFixedParallaxSection backgroundColor={"var(--dark-blue-1)"} contentPosition={-1}>
                 <h2>Our Vision</h2>
                 <p>Our Vision is to build excellence in character and learning in children. Ensuring that they attain the right foundational grooming that will make them exceptional community, corporate, and business leaders in the future</p>
@@ -32,6 +46,15 @@ const AppHomePage = () => {
                 <h2>Salem Academy</h2>
 
             </AppFixedParallaxSection>
+
+            <VideoPlayer
+                controls={true}
+                src={"./assets/videos/SalemAcademy.mp4"}
+
+                width={w}
+                height={h}
+
+            />
             <AppArticleSection>
                 <h2>About Salem Academy</h2>
 
