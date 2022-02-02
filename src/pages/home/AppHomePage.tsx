@@ -19,17 +19,24 @@ const AppHomePage = () => {
     const latestEvent = eventList[0]
     const navigateTo = useNavigate();
     // eslint-disable-next-line no-restricted-globals
-    var w = screen.width
+    var w = document.getElementsByTagName("html")[0].getBoundingClientRect().width - 10;
+
     // eslint-disable-next-line no-restricted-globals
     var h = screen.height
+
     return (
         <div className='app-home'>
 
             <AppHeader
                 heading={<>Welcome</>}
-                paragraph={<><p>Welcome to Salem Academy. As the founder, I am passionate about Salem and our wonderful kids. It has been the pleasure of my life to create a school for future leaders, thought leaders, visionaries, professionals, and entrepreneurs who are kind, passionate, respectful, innovative and excellent at all they do. It is our aim to shape the process of creating well-rounded young people who can face the challenges of the 21st century and beyond.
-                </p>
-                    <p>Our success is primarily down to our overarching principle and belief in excellence, it is indeed the founding block of our school. All our teachers and students have fully embraced our value of excellence and as such, it defines all that we do. I believe that today’s students will be tomorrow’s citizens, leaders, workers, and parents. therefore, a good education is an investment with enduring benefits.</p>
+                paragraph={<>
+
+                    <p>
+                        Welcome to Salem Academy. As the founder, I am passionate about Salem and our wonderful kids. It has been the pleasure of my life to create a school for future leaders, thought leaders, visionaries, professionals, and entrepreneurs who are kind, passionate, respectful, innovative and excellent at all they do. It is our aim to shape the process of creating well-rounded young people who can face the challenges of the 21st century and beyond.
+                    </p>
+                    <p>
+                        Our success is primarily down to our overarching principle and belief in excellence, it is indeed the founding block of our school. All our teachers and students have fully embraced our value of excellence and as such, it defines all that we do. I believe that today’s students will be tomorrow’s citizens, leaders, workers, and parents. therefore, a good education is an investment with enduring benefits.
+                    </p>
                 </>}
                 backgroundImg={"./assets/images/home-header-banner.webp"} />
 

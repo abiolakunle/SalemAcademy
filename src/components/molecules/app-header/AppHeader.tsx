@@ -17,7 +17,7 @@ const AppHeader = ({ heading, paragraph, backgroundImg, showBreadcrumb }: any) =
 
                     <div className="heading-texts">
                         <h1>{heading}</h1>
-                        <p>{paragraph}</p>
+                        <div>{paragraph}</div>
                         <div className="mouse_scroll">
 
                             <div className="mouse">

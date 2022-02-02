@@ -25,9 +25,9 @@ const AppEventsPage = () => {
                     <div className="col-md-12">
                         {
 
-                            eventItems.map(l => (<>
+                            eventItems.map((l, index) => (
 
-                                <div className="main-timeline">
+                                <div className="main-timeline" key={index}>
                                     <div className="timeline">
                                         <a href="#" className="timeline-content">
                                             <div className="timeline-icon"><i className="fas fa-calendar-alt"></i></div>
@@ -55,7 +55,7 @@ const AppEventsPage = () => {
                                         </div>
                                     }
                                 </div>
-                            </>))
+                            ))
                         }
                         {/* <div className="main-timeline">
                             <div className="timeline">

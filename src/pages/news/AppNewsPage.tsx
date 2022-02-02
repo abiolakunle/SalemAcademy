@@ -26,8 +26,8 @@ const AppNewsPage = () => {
             <Container className="app-events" >
                 <Row className='events '>
                     {
-                        newsItems.map(item => (<>
-                            <Col md={4} >
+                        newsItems.map((item, index) => (
+                            <Col md={4} key={index} >
 
 
                                 <div onClick={() => setCurrentNews(item)} style={{ backgroundImage: `url(${item.image})` }} className="event-item">
@@ -43,7 +43,7 @@ const AppNewsPage = () => {
                                     </div>
                                 </div>
                             </Col>
-                        </>))
+                        ))
                     }
 
                 </Row>
