@@ -6,7 +6,7 @@ import AppHeader from '../../components/molecules/app-header/AppHeader';
 const InformationCenter = () => {
     return <div>
         <AppHeader
-            backgroundImg={"./assets/images/Salem14.jpg"}
+            backgroundImg={"./assets/images/salem14.jpg"}
             heading={<>Information center</>}
             paragraph={<>We encourage positive traits such as excellence, respect, discipline, Faith and integrity. We use our unique curriculum to give children a strong foundation for learning and living.</>}
             showBreadcrumb={true} />
