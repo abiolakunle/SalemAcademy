@@ -8,7 +8,7 @@ const AppSecondarySchoolPage = () => {
     return (
         <>
             <AppHeader
-                backgroundImg={"/assets/images/fine_art.jfif"}
+                backgroundImg={"/assets/images/Salem4.jpg"}
                 heading={<>Secondary School</>}
                 paragraph={<>Our students have an unmatched track record of easily transitioning from secondary school to tertiary Institutions on their first attempt, due to the robust, quality education and preparation they receive at Salem Secondary School.</>}
                 showBreadcrumb={true} />

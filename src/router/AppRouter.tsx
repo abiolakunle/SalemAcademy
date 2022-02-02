@@ -14,6 +14,7 @@ import AppSecondarySchoolPage from '../pages/secondary-school/AppSecondarySchool
 import AppCrecheSchoolPage from '../pages/creche-school/AppCrecheSchoolPage'
 import AppNurserySchoolPage from '../pages/nursery-school/AppNurserySchoolPage'
 import ScrollToTop from '../components/atoms/scroll-to-top/ScrollToTop'
+import InformationCenter from '../pages/information-centre/InformationCenter'
 
 const AppRouter = () => {
     return (
@@ -31,6 +32,7 @@ const AppRouter = () => {
                 <Route path="/secondary-school" element={<AppSecondarySchoolPage />} />
                 <Route path="/creche-school" element={<AppCrecheSchoolPage />} />
                 <Route path="/nursery-school" element={<AppNurserySchoolPage />} />
+                <Route path="/information-center" element={<InformationCenter />} />
                 <Route path="*" element={<App404Page />} />
             </Routes>
         </ScrollToTop>

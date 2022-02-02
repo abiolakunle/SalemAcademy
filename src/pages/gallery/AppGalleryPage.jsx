@@ -1,10 +1,10 @@
 
-import { Space } from "antd";
 import { Col, Container, Row } from "react-bootstrap";
 import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox";
 import AppPageTitle from "../../components/atoms/app-page-title/AppPageTitle";
 import AppHeader from "../../components/molecules/app-header/AppHeader";
 import "./AppGalleryPage.css"
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const options = {
     buttons: {
@@ -51,7 +51,37 @@ const AppGalleryPage = () => {
         { imageUrl: "./assets/images/Salem7.jpg", title: "Salem" },
         { imageUrl: "./assets/images/Salem10.jpg", title: "Salem" },
         { imageUrl: "./assets/images/selem-chem.jfif", title: "Salem" },
-        { imageUrl: "./assets/images/creche.webp", title: "Salem" }];
+        { imageUrl: "./assets/images/creche.webp", title: "Salem" },
+
+        { imageUrl: "./assets/images/cultural.jpg", title: "Salem" },
+        { imageUrl: "./assets/images/salem-academy-ground-view.jfif", title: "Salem" },
+        { imageUrl: "./assets/images/salem-academy-view.webp", title: "Salem" },
+        { imageUrl: "./assets/images/Salem1.jpg", title: "Salem" },
+        { imageUrl: "./assets/images/Salem2.jpg", title: "Salem" },
+        { imageUrl: "./assets/images/Salem3.jpg", title: "Salem" },
+        { imageUrl: "./assets/images/Salem5.jpg", title: "Salem" },
+        { imageUrl: "./assets/images/Salem6.jpg", title: "Salem" },
+        { imageUrl: "./assets/images/Salem8.jpg", title: "Salem" },
+        { imageUrl: "./assets/images/Salem9.jpg", title: "Salem" },
+        { imageUrl: "./assets/images/Salem11.jpg", title: "Salem" },
+        { imageUrl: "./assets/images/Salem12.jpg", title: "Salem" },
+        { imageUrl: "./assets/images/Salem13.jpg", title: "Salem" },
+        { imageUrl: "./assets/images/Salem14.jpg", title: "Salem" },
+        { imageUrl: "./assets/images/Salem15.jpg", title: "Salem" },
+        { imageUrl: "./assets/images/Salem16.jpg", title: "Salem" },
+        { imageUrl: "./assets/images/Salem17.jpg", title: "Salem" },
+        { imageUrl: "./assets/images/Salem18.jpg", title: "Salem" },
+        { imageUrl: "./assets/images/Salem19.jpg", title: "Salem" },
+        { imageUrl: "./assets/images/Salem20.jpg", title: "Salem" },
+        { imageUrl: "./assets/images/Salem21.jpg", title: "Salem" },
+        { imageUrl: "./assets/images/Salem22.jpg", title: "Salem" },
+        { imageUrl: "./assets/images/Salem23.jpg", title: "Salem" },
+        { imageUrl: "./assets/images/Salem24.jpg", title: "Salem" },
+
+
+
+
+    ];
 
     return (
         <div>
@@ -68,9 +98,15 @@ const AppGalleryPage = () => {
 
                         <Row>
                             {photos.map(({ imageUrl, title }, id) => (
-                                <Col className="picture" key={id} md={3} >
+                                <Col className="picture" key={id} md={4} >
                                     <a href={imageUrl} data-attribute="SRL">
-                                        <img className="app-gallery-image" src={imageUrl} alt={title} />
+                                        {/* <img className="app-gallery-image" src={imageUrl} alt={title} /> */}
+
+                                        <LazyLoadImage
+                                            alt={title}
+                                            className="app-gallery-image"
+                                            src={imageUrl}
+                                        />
                                     </a>
 
                                 </Col>

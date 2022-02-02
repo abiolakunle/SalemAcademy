@@ -59,4 +59,10 @@
     color: var(--white);
 }
 
+img[alt="salem-news"] { 
+  max-width: 70%; 
+  display: block;
+  margin: 40px auto;
+}
+
 

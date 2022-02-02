@@ -53,7 +53,7 @@ const AppContactPage = () => {
     };
 
     return (<>       <AppHeader
-        backgroundImg={"./assets/images/contact-us.jpg"}
+        backgroundImg={"./assets/images/salem13.jpg"}
         heading={<>Contact us</>}
         paragraph={<>We pride ourselves on creating a unique, exciting and serene environment that embraces all types of learners and promotes growth both academically and personally. For over 12 years, Salem Academy has enabled the learning and development of pupils and students by giving them the right tools and resources to truly flourish. </>}
         showBreadcrumb={true} />

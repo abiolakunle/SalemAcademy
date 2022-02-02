@@ -32,6 +32,10 @@ As part of our resolve to ensure that our students at Salem Academy get the best
 
 The Nigeria Institute of Soil Science with head quarters in Abuja, in the most recent commemoration of the World Soil Day extended an invitation to Salem Academy to be part of the event which held at Merit house, Maitama Abuja.
 
+
+![salem-news](./assets/images/Salem21.jpg)
+
+
 The theme for the 2021 event was; **Halt Soil Salinization, Boost soil productivity**.
 
 The students, members of the Young Farmers Club, were treated to lectures on soil protection and productivity. And other lectures were centered on soil components and salinity.
@@ -40,12 +44,14 @@ The lectures were delivered by professionals and professors from top-rated unive
 
 It was a great time of learning for the students as they were given opportunity to ask questions from the series of lectures they received.
 
+![salem-news](./assets/images/Salem18.jpg)
+
 As they got back to school after the event, the students who were accompanied by their Agricultural Science Teacher, quizzed her in their next Young Farmers Club meeting on possible career path in Agricultural Science.
 
 It&#39;s safe to say the opportunity to be part of World Soil Day 2021 with the theme; Halt Soil Salinization, Boost Soil Productivity, has had a lasting impact on our students and opportunities of this sort and quality are a regular fit at Salem Academy.
         `,
         date: new Date("2021-12-5"),
-        image: "./assets/images/Salem6.jpg"
+        image: "./assets/images/Salem15.jpg"
     },
 
     {
@@ -65,6 +71,8 @@ The level of preparation for the cultural presentations, facilitated by our able
 
 The cultural day celebration which is held every session creates an avenue for our students to experience first hand some of the aspects of culture taught in the classroom.
 
+![salem-news](./assets/images/cultural.jpg)
+
 Here are some reasons for exposing students on culture;
 
 1. **Understanding informs Appreciation** : Naturally, when we understand something, we value that thing; and when we value something, we will protect that thing and we will strive to learn even more. It is important for students to be taught about culture because, through a proper understanding, a student will be able to connect and appreciate culture and they will be able to imbibe and apply it where needed.
@@ -77,7 +85,7 @@ At the end of the event the first position went to the South-East, the second po
 
 Teaching about culture in the classroom and organizing cultural events in schools, makes for the all-round academic and social development of the child and this is what we are about at Salem Academy.    `,
         date: new Date("2021-11-20"),
-        image: "./assets/images/cultural.jpg"
+        image: "./assets/images/Salem24.jpg"
     }
 ].sort((a, b) => +b.date - +a.date)
 

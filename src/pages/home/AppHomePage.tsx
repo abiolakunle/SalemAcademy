@@ -33,10 +33,6 @@ const AppHomePage = () => {
                 </>}
                 backgroundImg={"./assets/images/home-header-banner.webp"} />
 
-
-
-
-
             <AppFixedParallaxSection backgroundColor={"var(--dark-blue-1)"} contentPosition={-1}>
                 <h2>Our Vision</h2>
                 <p>Our Vision is to build excellence in character and learning in children. Ensuring that they attain the right foundational grooming that will make them exceptional community, corporate, and business leaders in the future</p>
@@ -50,18 +46,10 @@ const AppHomePage = () => {
             <VideoPlayer
                 controls={true}
                 src={"./assets/videos/SalemAcademy.mp4"}
-
                 width={w}
                 height={h}
-
             />
-            <AppArticleSection>
-                <h2>About Salem Academy</h2>
 
-                <p>For over 12 years, Salem Academy has enabled pupils and students develop and learn by giving them the right tools and resources to truly flourish. Our team of highly qualified academic and non-academic staff focus on ensuring that each child is well educated, and that their individual needs are met. Like our name Salem implies, our school is a peaceful and serene learning environment for children to excel. </p>
-                <AppReadMoreBtn onClick={() => { navigateTo("about") }} />
-
-            </AppArticleSection>
             <AppArticleImageGrid backgroundColor="var(--green-grey)" imageUrl="./assets/images/Salem8.jpg" imageFirst={true} >
                 <span className="home-date">
                     {latestNews.date.toDateString()}
@@ -82,6 +70,29 @@ const AppHomePage = () => {
 
                 <AppReadMoreBtn text="See More Events" onClick={() => { navigateTo("events") }} color="var(--white)" borderColor="var(--white)" />
             </AppArticleImageGrid>
+            <AppArticleSection>
+                <h2>About Salem Academy</h2>
+
+                <p>At Salem Academy, students receive so much more than an ordinary education. We pride ourselves on creating a unique, exciting and serene environment that embraces all types of learners and promotes growth both academically and personally. For over 12 years, Salem Academy has enabled pupils and students develop and learn by giving them the right tools and resources to truly flourish. Our team of highly qualified academic and non-academic staff focus on ensuring that each child is well educated, and that their individual needs are met. Like our name Salem implies, our school is a peaceful and serene learning environment for children to excel. </p>
+                <AppReadMoreBtn onClick={() => { navigateTo("about") }} />
+
+            </AppArticleSection>
+            <Container fluid style={{ backgroundColor: "var(--primary)", padding: "5%" }}>
+                <AppArticleImageGrid backgroundColor="var(--dark-blue-1)" color="var(--white)" imageUrl="./assets/images/salem-academy-ground-view.jfif" imageFirst={true} >
+
+                    <h2>OUR ACADEMICS</h2>
+                    <p>The academic program at Salem Academy places an emphasis on every aspect of student growth and development, while meeting statutory requirements. Suitable class sizes, satisfactory number of students per class and exceptional, qualified teachers allow us to offer a comfortable and inclusive educational setting, while ensuring each student receives the individualized attention and support they need.</p>
+                </AppArticleImageGrid>
+            </Container>
+
+            <Container fluid style={{ backgroundColor: "var(--white)", padding: "5%" }}>
+                <AppArticleImageGrid backgroundColor="var(--dark-blue-1)" color="var(--white)" imageUrl="./assets/images/Salem2.jpg" imageFirst={true} >
+
+                    <h2>SALEM ACADEMY MISSION</h2>
+                    <p>
+                        To remain true to our vision by creating and promoting a healthy and serene environment to raise strong and diligent minds born out of faith and discipline.  </p>
+                </AppArticleImageGrid>
+            </Container>
             {/* <AppArticleImageGrid backgroundColor="var(--light-grey)" imageUrl="./assets/images/home-header-banner.webp" imageFirst={true} >
                 <span className="news-date">
                     17 December 2021
